@@ -8,3 +8,8 @@ const flashCardsSeries = {
     biology: [
         { keyword: 'Cell', definition: 'The basic structural, functional, and biological unit of all known organisms.' },
         { keyword: 'DNA', definition: 'A molecule composed of two chains that coil around each other to form a double helix.' },
+        // add more Biology flashcards here...
+    ],
+    chemistry: [
+        { keyword: 'Atom', definition: 'The smallest unit of a chemical element that retains its chemical properties.' },
+        { keyword: 'Molecule', definition: 'A group of atoms bonded together.' },
