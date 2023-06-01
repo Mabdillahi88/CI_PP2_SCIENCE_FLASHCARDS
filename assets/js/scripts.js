@@ -79,3 +79,8 @@ function startTimer() {
     // Start new timer
     timer = setInterval(() => {
         timerElement.innerText = Number(timerElement.innerText) - 1;
+
+        if (timerElement.innerText === '0') {
+            // Automatically check answers when time is up
+            checkAnswers();
+            alert('Time is up! Let\'s see how you did.');
