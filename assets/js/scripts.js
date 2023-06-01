@@ -106,3 +106,8 @@ function switchTopic() {
             break;
     }
 }
+
+// Function to check answers
+function checkAnswers() {
+    const flashCardsElements = document.querySelectorAll('.flashCard');
+    let correctAnswers = 0;
