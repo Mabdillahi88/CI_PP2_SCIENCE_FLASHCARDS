@@ -72,3 +72,10 @@ function startTimer() {
     if (timer) {
         clearTimeout(timer);
     }
+
+    // Update timer display
+    timerElement.innerText = '15';
+
+    // Start new timer
+    timer = setInterval(() => {
+        timerElement.innerText = Number(timerElement.innerText) - 1;
