@@ -32,3 +32,10 @@ function shuffle(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
+
+// Function to create flash cards
+function createFlashCards(topic) {
+    flashCardsContainer.innerHTML = '';
+    flashCardsSeries[topic].forEach((card, index) => {
+        const cardElement = document.createElement('div');
+        cardElement.classList.add('flashCard');
