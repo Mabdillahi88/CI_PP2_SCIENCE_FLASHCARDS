@@ -59,3 +59,6 @@ function createFlashCards(topic) {
         cardElement.appendChild(selectElement);
         flashCardsContainer.appendChild(cardElement);
     });
+
+    startTimer(); // Start the timer each time we create new flash cards
+}
