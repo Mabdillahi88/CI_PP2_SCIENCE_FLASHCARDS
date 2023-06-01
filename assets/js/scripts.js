@@ -117,3 +117,11 @@ function checkAnswers() {
         const definitionSelect = cardElement.querySelector('select');
 
         const correctDefinition = flashCardsSeries[currentTopic][keywordElement.dataset.id].definition;
+
+        if (definitionSelect.value === correctDefinition) {
+            correctAnswers++;
+            cardElement.classList.add('correct');
+        } else {
+            cardElement.classList.add('incorrect');
+        }
+    });
