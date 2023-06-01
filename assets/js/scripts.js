@@ -54,3 +54,8 @@ function createFlashCards(topic) {
             optionElement.innerText = definition;
             selectElement.appendChild(optionElement);
         });
+
+        cardElement.appendChild(keywordElement);
+        cardElement.appendChild(selectElement);
+        flashCardsContainer.appendChild(cardElement);
+    });
