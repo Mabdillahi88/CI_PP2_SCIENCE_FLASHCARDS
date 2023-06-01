@@ -13,3 +13,15 @@ const flashCardsSeries = {
     chemistry: [
         { keyword: 'Atom', definition: 'The smallest unit of a chemical element that retains its chemical properties.' },
         { keyword: 'Molecule', definition: 'A group of atoms bonded together.' },
+        // add more Chemistry flashcards here...
+    ],
+    // add more topics here...
+};
+
+let currentTopic = 'physics'; // start with Physics flashcards
+
+// Get HTML elements
+const flashCardsContainer = document.getElementById('flashCardsContainer');
+const checkAnswersButton = document.getElementById('checkAnswers');
+const timerElement = document.getElementById('timer');
+
