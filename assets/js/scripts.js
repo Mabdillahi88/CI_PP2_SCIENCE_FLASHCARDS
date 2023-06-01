@@ -46,3 +46,11 @@ function createFlashCards(topic) {
 
         const definitions = flashCardsSeries[topic].map(flashCard => flashCard.definition);
         shuffle(definitions);
+
+        const selectElement = document.createElement('select');
+        definitions.forEach(definition => {
+            const optionElement = document.createElement('option');
+            optionElement.value = definition;
+            optionElement.innerText = definition;
+            selectElement.appendChild(optionElement);
+        });
