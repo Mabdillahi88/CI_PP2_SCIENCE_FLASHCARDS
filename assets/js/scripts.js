@@ -91,3 +91,18 @@ function startTimer() {
         }
     }, 1000);
 }
+
+// Function to switch topic
+function switchTopic() {
+    switch (currentTopic) {
+        case 'physics':
+            currentTopic = 'biology';
+            break;
+        case 'biology':
+            currentTopic = 'chemistry';
+            break;
+        case 'chemistry':
+            currentTopic = 'physics'; // loop back to Physics after Chemistry
+            break;
+    }
+}
