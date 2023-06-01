@@ -84,3 +84,10 @@ function startTimer() {
             // Automatically check answers when time is up
             checkAnswers();
             alert('Time is up! Let\'s see how you did.');
+
+            // Move on to the next set of questions
+            switchTopic();
+            createFlashCards(currentTopic);
+        }
+    }, 1000);
+}
