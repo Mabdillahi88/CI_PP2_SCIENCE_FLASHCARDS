@@ -62,3 +62,13 @@ function createFlashCards(topic) {
 
     startTimer(); // Start the timer each time we create new flash cards
 }
+
+// Variable to hold the timer
+let timer;
+
+// Function to start the timer
+function startTimer() {
+    // Reset timer if it is already running
+    if (timer) {
+        clearTimeout(timer);
+    }
