@@ -39,3 +39,10 @@ function createFlashCards(topic) {
     flashCardsSeries[topic].forEach((card, index) => {
         const cardElement = document.createElement('div');
         cardElement.classList.add('flashCard');
+
+        const keywordElement = document.createElement('div');
+        keywordElement.innerText = card.keyword;
+        keywordElement.dataset.id = index;
+
+        const definitions = flashCardsSeries[topic].map(flashCard => flashCard.definition);
+        shuffle(definitions);
