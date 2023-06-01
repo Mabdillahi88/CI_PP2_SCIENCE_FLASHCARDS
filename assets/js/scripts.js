@@ -111,3 +111,9 @@ function switchTopic() {
 function checkAnswers() {
     const flashCardsElements = document.querySelectorAll('.flashCard');
     let correctAnswers = 0;
+
+    flashCardsElements.forEach(cardElement => {
+        const keywordElement = cardElement.querySelector('div');
+        const definitionSelect = cardElement.querySelector('select');
+
+        const correctDefinition = flashCardsSeries[currentTopic][keywordElement.dataset.id].definition;
