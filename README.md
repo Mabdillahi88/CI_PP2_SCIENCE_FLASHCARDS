@@ -48,3 +48,11 @@ Science Flash Cards aims to create an interactive and user-friendly  game that t
  - Enjoy playing a fun and engaging game that tests and expands their scientific knowledge.
  - Experience a game with easy-to-understand rules that maintains their interest.
  - Challenge themselves to learn and recall new scientific terms and definitions.
+
+### Site owner goals
+
+ - Develop a captivating and interactive game that provides an enjoyable experience for users.
+ - Ensure the website's aesthetics are visually appealing to enhance user engagement.
+ - Design the website with a user-friendly interface that allows for easy navigation.
+ - Create a fully responsive and accessible website to accommodate users across different devices and a
+   ccessibility needs.
