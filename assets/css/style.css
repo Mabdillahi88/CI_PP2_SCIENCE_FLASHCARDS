@@ -108,3 +108,13 @@ button:hover {
         width: 200px;
     }
 }
+
+/* Tally chart styles */
+#tallyChart {
+    margin-top: 2em;
+}
+
+#tallyChart table {
+    width: 100%;
+    border-collapse: collapse;
+}
