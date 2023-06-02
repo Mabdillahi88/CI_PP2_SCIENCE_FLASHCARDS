@@ -152,7 +152,18 @@ const flashCardsSeries = {
     createFlashCards(currentTopic);
   }
   
- 
+  // Function to use hint
+  function useHint() {
+    if (hintsRemaining > 0 && !hintUsed) {
+      hintUsed = true;
+      hintsRemaining--;
+      hintButton.innerText = `Hint (${hintsRemaining} left)`;
+  
+      const flashCardsElements = document.querySelectorAll('.flashCard');
+      const currentCardElement = flashCardsElements[currentSet];
+      currentCardElement.classList.add('hinted');
+    }
+  }
   
   // Function to check answers
   function checkAnswers() {
