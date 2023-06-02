@@ -204,3 +204,5 @@ const flashCardsSeries = {
     useHint();
   });
   
+  // Start with creating flash cards for the first topic
+  createFlashCards(currentTopic);
