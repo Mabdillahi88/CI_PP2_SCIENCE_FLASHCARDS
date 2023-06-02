@@ -37,3 +37,9 @@
 10. [Deployment](#deployment)
 11. [Credits](#credits)
 12. [Acknowledgements](#acknowledgements)
+
+
+## Project Goals
+
+Science Flash Cards aims to create an interactive and user-friendly  game that tests and expands players' scientific knowledge.
+
