@@ -118,3 +118,9 @@ For the colour theme,Buttery Salmon brings warmth and comfort, creating a soothi
 ![Colour scheme](assets/images/colour_index.JPG)
 
 
+### Fonts 
+
+The versatile choice of Arial, sans-serif font brings a host of benefits to your website's design. Not only does it ensure a cohesive and visually appealing look, but it also creates a delightful and harmonious experience for users. With Arial's clean and modern appearance, your website will exude an attractive and polished vibe that captures attention and enhances its overall aesthetic appeal.
+
+
+
