@@ -123,7 +123,23 @@ const flashCardsSeries = {
     }, 1000);
   }
   
-
+  // Function to reveal correct answers
+  function revealCorrectAnswers() {
+    const flashCardsElements = document.querySelectorAll('.flashCard');
+  
+    flashCardsElements.forEach((cardElement) => {
+      const keywordElement = cardElement.querySelector('div');
+      const definitionSelect = cardElement.querySelector('select');
+  
+      const correctDefinition = flashCardsSeries[currentTopic][keywordElement.dataset.id].definition;
+      const correctOption = cardElement.querySelector(`option[value="${correctDefinition}"]`);
+  
+      definitionSelect.disabled = false;
+      definitionSelect.value = correctDefinition;
+      correctOption.classList.remove('correct');
+    });
+  }
+  
 
  
   
