@@ -56,3 +56,12 @@ Science Flash Cards aims to create an interactive and user-friendly  game that t
  - Design the website with a user-friendly interface that allows for easy navigation.
  - Create a fully responsive and accessible website to accommodate users across different devices and a
    ccessibility needs.
+
+## User Experience
+
+### Target audiene
+
+ - Science enthusiasts and learners of all ages.
+ - Students studying science subjects.
+ - Individuals looking to improve their scientific knowledge and vocabulary.
+ - Gamers who enjoy educational and interactive experiences.
