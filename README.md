@@ -107,3 +107,14 @@ Science Flash Cards aims to create an interactive and user-friendly  game that t
 13. I want to have a straightforward way to contact the site owner and share my comments or feedback.
 
 
+## Design
+
+The website aims to visually captivate users and showcase the Science Flash Card game, providing an engaging and immersive online gaming experience.
+
+### Colour Scheme
+
+For the colour theme,Buttery Salmon brings warmth and comfort, creating a soothing and inviting atmosphere, while Coral Candy exudes playfulness and vibrancy, uplifting moods and creating a joyful ambiance. These colors offer distinct benefits, whether you seek tranquility or a visually appealing and energetic environment.
+
+![Colour scheme](assets/images/colour_index.JPG)
+
+
