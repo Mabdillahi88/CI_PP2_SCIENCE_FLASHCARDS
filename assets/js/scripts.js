@@ -93,7 +93,16 @@ const flashCardsSeries = {
     hintUsed = false;
   }
   
-
+  // Function to update progress indicator
+  function updateProgressIndicator() {
+    progressIndicator.innerText = `Set ${currentSet + 1} of ${totalSets}`;
+  }
+  
+  // Function to reset timer
+  function resetTimer() {
+    clearInterval(timerInterval);
+    timerBar.style.width = '100%';
+  }
   
   // Function to start the timer
   function startTimer() {
