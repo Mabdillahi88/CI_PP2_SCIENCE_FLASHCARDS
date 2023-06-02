@@ -67,3 +67,13 @@ button {
     font-size: 1em;
     transition: background .3s ease-in-out;
 }
+
+button:hover {
+    background: #b83b5e;
+    cursor: pointer;
+}
+
+.correct {
+    border-color: #00c853; /* green */
+    background-color: #e8f5e9; /* light green */
+}
