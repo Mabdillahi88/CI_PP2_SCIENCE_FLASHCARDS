@@ -140,7 +140,18 @@ const flashCardsSeries = {
     });
   }
   
-
+  // Function to switch topic
+  function switchTopic() {
+    currentSet++;
+    if (currentSet === totalSets) {
+      currentSet = 0; // loop back to the first set after completing all sets
+    }
+    currentTopic = Object.keys(flashCardsSeries)[currentSet];
+    hintsRemaining = 2; // reset hints for each set of questions
+  
+    createFlashCards(currentTopic);
+  }
+  
  
   
   // Function to check answers
