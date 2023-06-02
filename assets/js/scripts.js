@@ -1,127 +1,125 @@
 // An object to store our flash cards arrays, organized by topic
 const flashCardsSeries = {
     physics: [
-        { keyword: 'Force', definition: 'A push or pull upon an object resulting from the object\'s interaction with another object.' },
-        { keyword: 'Energy', definition: 'The capacity to do work.' },
-        // add more Physics flashcards here...
+      { keyword: 'Force', definition: 'A push or pull upon an object resulting from the object\'s interaction with another object.' },
+      { keyword: 'Energy', definition: 'The capacity to do work.' },
+      { keyword: 'Energy', definition: 'Capacity for work.' },
+      { keyword: 'Renewables', definition: 'Sustainable energy sources.' },
+      { keyword: 'Fossil Fuels', definition: 'Ancient organic remains as fuel.' },
+      { keyword: 'Efficiency', definition: 'Maximizing output, minimizing waste.' },
+      // add more Physics flashcards here...
     ],
     biology: [
-        { keyword: 'Cell', definition: 'The basic structural, functional, and biological unit of all known organisms.' },
-        { keyword: 'DNA', definition: 'A molecule composed of two chains that coil around each other to form a double helix.' },
-        // add more Biology flashcards here...
+      { keyword: 'Cell', definition: 'The basic structural, functional, and biological unit of all known organisms.' },
+      { keyword: 'DNA', definition: 'A molecule composed of two chains that coil around each other to form a double helix.' },
+      { keyword: 'DNA', definition: 'Genetic material.' },
+      { keyword: 'Cell', definition: 'Basic unit of life.' },
+      { keyword: 'Mitosis', definition: 'Cell division.' },
+      { keyword: 'Photosynthesis', definition: 'Light to energy.' },
+      // add more Biology flashcards here...
     ],
     chemistry: [
-        { keyword: 'Atom', definition: 'The smallest unit of a chemical element that retains its chemical properties.' },
-        { keyword: 'Molecule', definition: 'A group of atoms bonded together.' },
-        // add more Chemistry flashcards here...
+      { keyword: 'Atom', definition: 'The smallest unit of a chemical element that retains its chemical properties.' },
+      { keyword: 'Molecule', definition: 'A group of atoms bonded together.' },
+      { keyword: 'Atom', definition: 'Basic unit of matter.' },
+      { keyword: 'Molecule', definition: 'Chemical structure.' },
+      { keyword: 'Acid', definition: 'Sour-tasting compound.' },
+      { keyword: 'Base', definition: 'Alkaline compound.' },
+      // add more Chemistry flashcards here...
     ],
     // add more topics here...
-};
-
-let currentTopic = 'physics'; // start with Physics flashcards
-
-// Get HTML elements
-const flashCardsContainer = document.getElementById('flashCardsContainer');
-const checkAnswersButton = document.getElementById('checkAnswers');
-const timerElement = document.getElementById('timer');
-
-// Function to shuffle array - we use this to shuffle definitions
-function shuffle(array) {
+  };
+  
+  let currentTopic = 'physics'; // start with Physics flashcards
+  let currentSet = 0; // current set of questions
+  const totalSets = Object.keys(flashCardsSeries).length; // total number of question sets
+  
+  let hintsRemaining = 2; // maximum number of hints allowed
+  let hintUsed = false; // flag to track if hint has been used for current question
+  
+  let timerInterval; // variable to hold the timer interval
+  let timerDuration = 15; // duration in seconds for each set of questions
+  
+  // Get HTML elements
+  const flashCardsContainer = document.getElementById('flashCardsContainer');
+  const checkAnswersButton = document.getElementById('checkAnswers');
+  const progressIndicator = document.getElementById('progressIndicator');
+  const hintButton = document.getElementById('hintButton');
+  const timerBar = document.getElementById('timerBar');
+  const tallyChart = document.getElementById('tallyChart');
+  
+  let tallyCorrect = 0; // counter for correct answers
+  let tallyIncorrect = 0; // counter for incorrect answers
+  
+  // Function to shuffle array - we use this to shuffle definitions
+  function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
-}
-
-// Function to create flash cards
-function createFlashCards(topic) {
+  }
+  
+  // Function to create flash cards
+  function createFlashCards(topic) {
     flashCardsContainer.innerHTML = '';
+  
     flashCardsSeries[topic].forEach((card, index) => {
-        const cardElement = document.createElement('div');
-        cardElement.classList.add('flashCard');
-
-        const keywordElement = document.createElement('div');
-        keywordElement.innerText = card.keyword;
-        keywordElement.dataset.id = index;
-
-        const definitions = flashCardsSeries[topic].map(flashCard => flashCard.definition);
-        shuffle(definitions);
-
-        const selectElement = document.createElement('select');
-        definitions.forEach(definition => {
-            const optionElement = document.createElement('option');
-            optionElement.value = definition;
-            optionElement.innerText = definition;
-            selectElement.appendChild(optionElement);
-        });
-
-        cardElement.appendChild(keywordElement);
-        cardElement.appendChild(selectElement);
-        flashCardsContainer.appendChild(cardElement);
+      const cardElement = document.createElement('div');
+      cardElement.classList.add('flashCard');
+  
+      const keywordElement = document.createElement('div');
+      keywordElement.innerText = card.keyword;
+      keywordElement.dataset.id = index;
+  
+      const definitions = flashCardsSeries[topic].map((flashCard) => flashCard.definition);
+      shuffle(definitions);
+  
+      const selectElement = document.createElement('select');
+      definitions.forEach((definition) => {
+        const optionElement = document.createElement('option');
+        optionElement.value = definition;
+        optionElement.innerText = definition;
+        selectElement.appendChild(optionElement);
+      });
+  
+      cardElement.appendChild(keywordElement);
+      cardElement.appendChild(selectElement);
+      flashCardsContainer.appendChild(cardElement);
     });
+  
+    resetTimer();
+    startTimer();
+    updateProgressIndicator();
+    hintUsed = false;
+  }
+  
 
-    startTimer(); // Start the timer each time we create new flash cards
-}
-
-// Variable to hold the timer
-let timer;
-
-// Function to start the timer
-function startTimer() {
-    // Reset timer if it is already running
-    if (timer) {
-        clearTimeout(timer);
-    }
-
-    // Update timer display
-    timerElement.innerText = '15';
-
-    // Start new timer
-    timer = setInterval(() => {
-        timerElement.innerText = Number(timerElement.innerText) - 1;
-
-        if (timerElement.innerText === '0') {
-            // Automatically check answers when time is up
-            checkAnswers();
-            alert('Time is up! Let\'s see how you did.');
-
-            // Move on to the next set of questions
-            switchTopic();
-            createFlashCards(currentTopic);
-        }
+  
+  // Function to start the timer
+  function startTimer() {
+    let remainingSeconds = timerDuration;
+  
+    timerInterval = setInterval(() => {
+      remainingSeconds--;
+      const percentage = (remainingSeconds / timerDuration) * 100;
+      timerBar.style.width = `${percentage}%`;
+  
+      if (remainingSeconds === 0) {
+        clearInterval(timerInterval);
+        revealCorrectAnswers();
+        setTimeout(() => {
+          switchTopic();
+        }, 3000);
+      }
     }, 1000);
-}
+  }
+  
 
-// Function to switch topic
-function switchTopic() {
-    switch (currentTopic) {
-        case 'physics':
-            currentTopic = 'biology';
-            break;
-        case 'biology':
-            currentTopic = 'chemistry';
-            break;
-        case 'chemistry':
-            currentTopic = 'physics'; // loop back to Physics after Chemistry
-            break;
-    }
-}
 
-// Function to check answers
-function checkAnswers() {
+ 
+  
+  // Function to check answers
+  function checkAnswers() {
     const flashCardsElements = document.querySelectorAll('.flashCard');
     let correctAnswers = 0;
-
-    flashCardsElements.forEach(cardElement => {
-        const keywordElement = cardElement.querySelector('div');
-        const definitionSelect = cardElement.querySelector('select');
-
-        const correctDefinition = flashCardsSeries[currentTopic][keywordElement.dataset.id].definition;
-
-        if (definitionSelect.value === correctDefinition) {
-            correctAnswers++;
-            cardElement.classList.add('correct');
-        } else {
-            cardElement.classList.add('incorrect');
-        }
-    });
+  
