@@ -119,7 +119,7 @@ function startTimer() {
       clearInterval(timerInterval);
       revealCorrectAnswers();
       setTimeout(() => {
-        nextSet();
+        nextTopic();
       }, 3000);
     }
   }, 1000);
@@ -204,7 +204,7 @@ function checkAnswers() {
   alert(`You got ${correctAnswers} out of ${flashCardsSeries[currentTopic].length} correct!`);
 
   if (correctAnswers === flashCardsSeries[currentTopic].length) {
-    nextSet();
+    nextTopic();
   }
 }
 
