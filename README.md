@@ -75,3 +75,25 @@ Science Flash Cards aims to create an interactive and user-friendly  game that t
  - Informative content for learning scientific terms.
  - Availability of hints and progress tracking.
  - Easy feedback and contact options for providing input to the creator.
+
+ ## User Stories
+
+1. As a first-time user, I want to easily navigate the Science Flash Card game and explore different science topics.
+
+2. As a first-time user, I expect the game's rules to be clear and simple, so I can quickly understand how to play and learn from the flashcards.
+
+3. As a first-time user, I want the game to work on any device, like my computer, tablet, or phone, for convenient learning anywhere.
+
+4. As a first-time user, I appreciate clear and concise information on each flashcard to help me learn scientific terms accurately.
+
+5. As a first-time user, having hints available would be helpful when I need assistance with the flashcards.
+
+6. As a first-time user, I find it valuable to track my progress and see how well I'm doing with the flashcards.
+
+7. As a first-time user, I want an easy way to provide feedback to the game's creator, sharing my thoughts or reporting any issues.
+
+8. As a first-time user, I expect the Science Flash Card game to run smoothly and have all the features working properly for a seamless learning experience.
+
+9. As a first-time user, I want confirmation that my message was sent.
+
+
