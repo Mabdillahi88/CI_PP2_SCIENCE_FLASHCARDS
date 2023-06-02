@@ -43,3 +43,8 @@
 
 Science Flash Cards aims to create an interactive and user-friendly  game that tests and expands players' scientific knowledge.
 
+### User Goals
+
+ - Enjoy playing a fun and engaging game that tests and expands their scientific knowledge.
+ - Experience a game with easy-to-understand rules that maintains their interest.
+ - Challenge themselves to learn and recall new scientific terms and definitions.
