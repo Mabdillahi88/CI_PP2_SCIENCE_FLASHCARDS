@@ -140,3 +140,9 @@ The website's layout is simple and intuitive, with consistent aesthetics through
 
 #### Contact form
 
+- A contact page with a contact form that enables users to email the developer with questions or comments 
+
+#### 404 error page
+
+- A separate 404 error page
+
