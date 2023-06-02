@@ -82,3 +82,14 @@ button:hover {
     border-color: #d50000; /* red */
     background-color: #ffebee; /* light red */
 }
+
+/* Medium devices (tablets, less than 800px) */
+@media only screen and (min-width: 500px) {
+    #flashCardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flashCard {
+        padding: 1.5em;
+    }
+}
