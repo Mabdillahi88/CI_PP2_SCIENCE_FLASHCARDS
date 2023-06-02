@@ -47,6 +47,8 @@ const progressIndicator = document.getElementById('progressIndicator');
 const hintButton = document.getElementById('hintButton');
 const timerBar = document.getElementById('timerBar');
 const tallyChart = document.getElementById('tallyChart');
+const nextButton = document.getElementById('nextButton');
+const prevButton = document.getElementById('prevButton');
 
 let tallyCorrect = 0; // counter for correct answers
 let tallyIncorrect = 0; // counter for incorrect answers
@@ -140,11 +142,23 @@ function revealCorrectAnswers() {
   });
 }
 
-// Function to switch topic
-function switchTopic() {
+// Function to switch to the next topic
+function nextTopic() {
   currentSet++;
   if (currentSet === totalSets) {
     currentSet = 0; // loop back to the first set after completing all sets
+  }
+  currentTopic = Object.keys(flashCardsSeries)[currentSet];
+  hintsRemaining = 2; // reset hints for each set of questions
+
+  createFlashCards(currentTopic);
+}
+
+// Function to switch to the previous topic
+function prevTopic() {
+  currentSet--;
+  if (currentSet < 0) {
+    currentSet = totalSets - 1; // loop back to the last set if at the first set
   }
   currentTopic = Object.keys(flashCardsSeries)[currentSet];
   hintsRemaining = 2; // reset hints for each set of questions
@@ -226,6 +240,14 @@ checkAnswersButton.addEventListener('click', () => {
 
 hintButton.addEventListener('click', () => {
   useHint();
+});
+
+nextButton.addEventListener('click', () => {
+  nextTopic();
+});
+
+prevButton.addEventListener('click', () => {
+  prevTopic();
 });
 
 // Start with creating flash cards for the first topic
