@@ -65,3 +65,13 @@ Science Flash Cards aims to create an interactive and user-friendly  game that t
  - Students studying science subjects.
  - Individuals looking to improve their scientific knowledge and vocabulary.
  - Gamers who enjoy educational and interactive experiences.
+
+### User Expectations
+
+ - Engaging gameplay that expands scientific knowledge.
+ - Clear and concise rules with intuitive navigation.
+ - Interactive and visually appealing design.
+ - Responsive and accessible website across devices.
+ - Informative content for learning scientific terms.
+ - Availability of hints and progress tracking.
+ - Easy feedback and contact options for providing input to the creator.
