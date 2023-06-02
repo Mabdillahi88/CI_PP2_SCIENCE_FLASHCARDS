@@ -123,4 +123,17 @@ For the colour theme,Buttery Salmon brings warmth and comfort, creating a soothi
 The versatile choice of Arial, sans-serif font brings a host of benefits to your website's design. Not only does it ensure a cohesive and visually appealing look, but it also creates a delightful and harmonious experience for users. With Arial's clean and modern appearance, your website will exude an attractive and polished vibe that captures attention and enhances its overall aesthetic appeal.
 
 
+### Structure
 
+The website's layout is simple and intuitive, with consistent aesthetics throughout. It offers a seamless and visually appealing user experience, making it easy to navigate and enjoy the game.
+
+### The game's screens are as follows:
+
+#### Science flash cards
+
+1. Instructions: Clear guidance on how to play and interact with the flashcards.
+2. Sets of Questions: Flashcards displaying scientific terms and definitions.
+3. Check Answers Button: Allows users to verify their answers.
+4. Hint: Provides additional assistance or clues.
+5. Navigation Buttons: Enable users to move between sets of questions.
+6. Tally Table: Tracks user's performance with correct and incorrect answers.
