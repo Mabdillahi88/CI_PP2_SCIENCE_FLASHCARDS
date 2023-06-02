@@ -14,3 +14,17 @@ h1 {
     text-align: center;
     margin-bottom: 1em;
 }
+
+#timer {
+    color: #d50000; /* red */
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#flashCardsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    width: 100%;
+}
