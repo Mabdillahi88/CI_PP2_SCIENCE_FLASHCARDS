@@ -93,3 +93,18 @@ button:hover {
         padding: 1.5em;
     }
 }
+
+/* Large devices (desktops, less than 1200px) */
+@media only screen and (min-width: 800px) {
+    #flashCardsContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .flashCard {
+        padding: 2em;
+    }
+
+    button {
+        width: 200px;
+    }
+}
