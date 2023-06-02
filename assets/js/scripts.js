@@ -200,3 +200,7 @@ const flashCardsSeries = {
     resetTimer();
   });
   
+  hintButton.addEventListener('click', () => {
+    useHint();
+  });
+  
