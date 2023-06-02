@@ -96,4 +96,14 @@ Science Flash Cards aims to create an interactive and user-friendly  game that t
 
 9. As a first-time user, I want confirmation that my message was sent.
 
+### Site Owner
+
+10. As a first-time user, I want the Science Flash Card game to be easy to understand and play.
+
+11. As a first-time user, I expect the game to work well on any device I use.
+
+12. If I enter an invalid URL, I want to see a helpful 404 error page instead of being confused.
+
+13. I want to have a straightforward way to contact the site owner and share my comments or feedback.
+
 

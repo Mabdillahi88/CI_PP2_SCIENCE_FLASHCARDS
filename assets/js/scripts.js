@@ -70,7 +70,6 @@ function createFlashCards(topic) {
     cardElement.classList.add('flashCard');
 
     const keywordElement = document.createElement('div');
-    keywordElement.innerText = card.keyword;
     keywordElement.dataset.id = index;
 
     const definitions = flashCardsSeries[topic].map((flashCard) => flashCard.definition);
@@ -93,6 +92,7 @@ function createFlashCards(topic) {
   resetTimer();
   startTimer();
   hintUsed = false;
+  updateHintButton();
 }
 
 // Function to update progress indicator
@@ -134,11 +134,9 @@ function revealCorrectAnswers() {
     const definitionSelect = cardElement.querySelector('select');
 
     const correctDefinition = flashCardsSeries[currentTopic][keywordElement.dataset.id].definition;
-    const correctOption = cardElement.querySelector(`option[value="${correctDefinition}"]`);
-
-    definitionSelect.value = correctDefinition;
+    keywordElement.innerText = `${cardElement.querySelector('div').innerText} (${correctDefinition})`; // Display the keyword with the correct definition as a hint
     definitionSelect.disabled = true;
-    correctOption.classList.add('correct');
+    definitionSelect.value = correctDefinition;
   });
 }
 
@@ -161,7 +159,7 @@ function prevTopic() {
     currentSet = totalSets - 1; // loop back to the last set if at the first set
   }
   currentTopic = Object.keys(flashCardsSeries)[currentSet];
-  hintsRemaining = 2; // reset hints for each set of questions
+  hintsRemaining = 8; // reset hints for each set of questions
 
   createFlashCards(currentTopic);
 }
@@ -171,12 +169,20 @@ function useHint() {
   if (hintsRemaining > 0 && !hintUsed) {
     hintUsed = true;
     hintsRemaining--;
-    hintButton.innerText = `Hint (${hintsRemaining} left)`;
+    updateHintButton();
 
     const flashCardsElements = document.querySelectorAll('.flashCard');
     const currentCardElement = flashCardsElements[currentSet];
-    currentCardElement.classList.add('hinted');
+    const currentCardIndex = currentCardElement.querySelector('div').dataset.id;
+    const correctDefinition = flashCardsSeries[currentTopic][currentCardIndex].definition;
+    currentCardElement.querySelector('div').innerText = `${currentCardElement.querySelector('div').innerText} (${correctDefinition})`; // Display the keyword with the correct definition as a hint
   }
+}
+
+// Function to update hint button text
+function updateHintButton() {
+  hintButton.innerText = `Hint (${hintsRemaining} left)`;
+  hintButton.disabled = hintsRemaining === 0;
 }
 
 // Function to check answers
@@ -185,10 +191,8 @@ function checkAnswers() {
   let correctAnswers = 0;
 
   flashCardsElements.forEach((cardElement) => {
-    const keywordElement = cardElement.querySelector('div');
     const definitionSelect = cardElement.querySelector('select');
-
-    const correctDefinition = flashCardsSeries[currentTopic][keywordElement.dataset.id].definition;
+    const correctDefinition = flashCardsSeries[currentTopic][cardElement.querySelector('div').dataset.id].definition;
 
     if (definitionSelect.value === correctDefinition) {
       correctAnswers++;
