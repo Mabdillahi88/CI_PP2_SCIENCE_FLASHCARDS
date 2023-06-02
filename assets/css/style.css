@@ -118,3 +118,19 @@ button:hover {
     width: 100%;
     border-collapse: collapse;
 }
+
+#tallyChart th,
+#tallyChart td {
+    padding: 0.5em 1em;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#tallyChart th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+#tallyChart td {
+    font-weight: normal;
+}
