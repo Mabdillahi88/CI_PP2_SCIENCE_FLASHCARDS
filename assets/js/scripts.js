@@ -182,4 +182,21 @@ const flashCardsSeries = {
       } else {
         cardElement.classList.add('incorrect');
       }
-   
+    });
+  
+    tallyCorrect += correctAnswers;
+    tallyIncorrect += flashCardsSeries[currentTopic].length - correctAnswers;
+  
+    alert(`You got ${correctAnswers} out of ${flashCardsSeries[currentTopic].length} correct!`);
+  
+    if (correctAnswers === flashCardsSeries[currentTopic].length) {
+      switchTopic();
+    }
+  }
+  
+  // Event listeners
+  checkAnswersButton.addEventListener('click', () => {
+    checkAnswers();
+    resetTimer();
+  });
+  
