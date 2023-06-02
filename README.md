@@ -137,3 +137,6 @@ The website's layout is simple and intuitive, with consistent aesthetics through
 4. Hint: Provides additional assistance or clues.
 5. Navigation Buttons: Enable users to move between sets of questions.
 6. Tally Table: Tracks user's performance with correct and incorrect answers.
+
+#### Contact form
+
