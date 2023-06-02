@@ -154,3 +154,7 @@ button:hover {
     cursor: pointer;
 }
 
+#hintButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
