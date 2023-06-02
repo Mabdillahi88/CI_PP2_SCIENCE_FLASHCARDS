@@ -40,3 +40,17 @@ h1 {
 .flashCard:hover {
     transform: scale(1.03);
 }
+
+.flashCard .keyword {
+    font-size: 1.5em;
+    color: #3c4043;
+    margin-bottom: 1em;
+}
+
+.flashCard select {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
