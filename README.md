@@ -285,3 +285,11 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 ### Testing 
 
   #### Testing user stories
+
+1. As a first-time user, I want to easily explore the Science Flash Card game and navigate between 
+   different science topics and the contact form.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Explore Game and contact form |  Navigate and switch topics and contact form | Easy exploration | Works as expected |
+
