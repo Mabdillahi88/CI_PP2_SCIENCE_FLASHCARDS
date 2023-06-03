@@ -318,5 +318,26 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Device Compatibility |  Access game on different devices | Able to use the game on computers, tablets, and phones | Works as expected |
 
-![rules](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![use on iphone 5](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
 
+
+
+4. As a first-time user, I value having clear and concise information on each flashcard to help me learn 
+   scientific terms accurately and efficiently.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Clear and Concise Content |  Read flashcard information | Accurate and concise information presented on each flashcard | Works as expected |
+
+![science content](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+
+
+4. As a first-time user, I value having clear and concise information on each flashcard to help me learn 
+   scientific terms accurately and efficiently.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Clear and Concise Content |  Read flashcard information | Accurate and concise information presented on each flashcard | Works as expected |
+
+![science content](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
