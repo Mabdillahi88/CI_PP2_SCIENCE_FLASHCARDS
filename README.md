@@ -311,6 +311,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 ![rules](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
 
 
+
 3. As a first-time user, I want the game to be accessible on various devices, such as computers, tablets 
    or phones, allowing me to conveniently learn anywhere.
 
@@ -333,11 +334,21 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 
 
 
-4. As a first-time user, I value having clear and concise information on each flashcard to help me learn 
-   scientific terms accurately and efficiently.
+5. As a first-time user, I would appreciate having hints available when I need assistance with the 
+   flashcards, making it easier for me to learn and understand the content.
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
-|  Clear and Concise Content |  Read flashcard information | Accurate and concise information presented on each flashcard | Works as expected |
+|  Hints |  Request assistance with flashcards | Availability of limited hints, aiding learning | Works as expected |
 
-![science content](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![hints](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+
+6. As a first-time user, I find it beneficial to be able to track my progress and view my performance  
+   with the flashcards, giving me visibility into how well I am doing and motivating my learning experience.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Progress Tracking |  Track progress and view performance | Clear visibility of progress and performance metrics | Works as expected |
+
+![tally](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
