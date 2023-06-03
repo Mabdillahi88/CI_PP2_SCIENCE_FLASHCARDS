@@ -78,21 +78,23 @@ Science Flash Cards aims to create an interactive and user-friendly  game that t
 
  ## User Stories
 
-1. As a first-time user, I want to easily navigate the Science Flash Card game and explore different science topics.
+1. As a first-time user, I want to easily explore the Science Flash Card game and navigate between 
+   different science topics and the contact form.
+2. As a first-time user, I expect the game's rules to be straightforward and easy to understand, so I can 
+   quickly grasp how to play and learn from the flashcards.
+3. As a first-time user, I want the game to be accessible on various devices, such as computers, tablets 
+   or phones, allowing me to conveniently learn anywhere.
+4. As a first-time user, I value having clear and concise information on each flashcard to help me learn 
+   scientific terms accurately and efficiently.
+5. As a first-time user, I would appreciate having hints available when I need assistance with the 
+   flashcards, making it easier for me to learn and understand the content.
+6. As a first-time user, I find it beneficial to be able to track my progress and view my performance  
+   with the flashcards, giving me visibility into how well I am doing and motivating my learning experience.
+7. As a first-time user, I want an easy way to provide feedback to the game's creator, sharing my  
+   thoughts or reporting any issues.
 
-2. As a first-time user, I expect the game's rules to be clear and simple, so I can quickly understand how to play and learn from the flashcards.
-
-3. As a first-time user, I want the game to work on any device, like my computer, tablet, or phone, for convenient learning anywhere.
-
-4. As a first-time user, I appreciate clear and concise information on each flashcard to help me learn scientific terms accurately.
-
-5. As a first-time user, having hints available would be helpful when I need assistance with the flashcards.
-
-6. As a first-time user, I find it valuable to track my progress and see how well I'm doing with the flashcards.
-
-7. As a first-time user, I want an easy way to provide feedback to the game's creator, sharing my thoughts or reporting any issues.
-
-8. As a first-time user, I expect the Science Flash Card game to run smoothly and have all the features working properly for a seamless learning experience.
+8. As a first-time user, I expect the Science Flash Card game to run smoothly and have all the features 
+   working properly for a seamless learning experience.
 
 9. As a first-time user, I want confirmation that my message was sent.
 
@@ -131,12 +133,21 @@ The website's layout is simple and intuitive, with consistent aesthetics through
 
 #### Science flash cards
 
-1. Instructions: Clear guidance on how to play and interact with the flashcards.
-2. Sets of Questions: Flashcards displaying scientific terms and definitions.
-3. Check Answers Button: Allows users to verify their answers.
-4. Hint: Provides additional assistance or clues.
-5. Navigation Buttons: Enable users to move between sets of questions.
-6. Tally Table: Tracks user's performance with correct and incorrect answers.
+1. navigation bar with links to different webpages, such as "Home" and "Contact Us," so that I can easily 
+   navigate between different sections of the website.
+2. clear instructions that provide me with clear guidance on how to play and interact 
+   with the flashcards, so that I can understand the rules and instructions of the game.
+3. sets of questions presented as flashcards, where each flashcard displays scientific terms and their 
+   corresponding definitions, so that I can learn and reinforce my knowledge in science.
+4. "Check Answers" button that allows me to verify my answers for each flashcard, so that I can evaluate 
+   my understanding and accuracy.
+5. "Hint" feature that provides additional assistance or clues for each flashcard, so that I can get help 
+   when I am unsure of the correct answer.
+6. navigation buttons, such as "Previous" and "Next," that enable me to move between different sets of 
+   questions or flashcards, so that I can easily navigate and explore the content.
+7. tally table that tracks and displays my performance, showing the number of correct and incorrect 
+   answers, so that I can monitor my progress and identify areas for improvement.
+
 
 # science flash card
 ![wireframes-home](assets/css/docs/features/wireframes/main_page_wireframe.JPG)
@@ -179,6 +190,14 @@ The website's layout is simple and intuitive, with consistent aesthetics through
 
 # Tools for validation
 
+- [WC3 Validator](https://validator.w3.org/)
+- [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
+- [JShint](https://jshint.com/)
+- [Wave Validator](https://wave.webaim.org/)
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 
+- [Am I Responsive](http://ami.responsivedesign.is/)
+
+
 ## Testing
 
 ### HTML Validation
@@ -202,4 +221,10 @@ contact_form [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3
 
 ![404](assets/css/docs/features/validations/404_error%20page.%20css.validation.JPG)
 
+
+
+
+## Features
+
+### Navigation Bar
 
