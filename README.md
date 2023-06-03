@@ -92,10 +92,8 @@ Science Flash Cards aims to create an interactive and user-friendly  game that t
    with the flashcards, giving me visibility into how well I am doing and motivating my learning experience.
 7. As a first-time user, I want an easy way to provide feedback to the game's creator, sharing my  
    thoughts or reporting any issues.
-
 8. As a first-time user, I expect the Science Flash Card game to run smoothly and have all the features 
    working properly for a seamless learning experience.
-
 9. As a first-time user, I want confirmation that my message was sent.
 
 ### Site Owner
@@ -352,3 +350,25 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 |  Progress Tracking |  Track progress and view performance | Clear visibility of progress and performance metrics | Works as expected |
 
 ![tally](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+
+
+7. As a first-time user, I want an easy way to provide feedback to the game's creator, sharing my  
+   thoughts or reporting any issues.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  contact form |  Provide feedback to the game's creator | Easy and accessible feedback submission process | Works as expected |
+
+![contact form](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+
+
+8. As a first-time user, I expect the Science Flash Card game to run smoothly and have all the features 
+   working properly for a seamless learning experience.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Smooth Experience |  Use the Science Flash Card game | Game runs smoothly without glitches or feature malfunctions | Works as expected |
+
+![game](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
