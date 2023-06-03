@@ -420,3 +420,9 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 
 ![contact form](assets/images/contact_form_user.JPG)
 
+
+## Bugs
+
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+When devices were switched, the games were not responsive. | To account for the varied widths of devices, media query was utilized
