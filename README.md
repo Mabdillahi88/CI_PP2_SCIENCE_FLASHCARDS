@@ -291,11 +291,11 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Explore Game and contact form |  Navigate and switch topics and contact form | Easy exploration | Works as expected |
 
-![science flash page](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![science flash page](assets/images/science_flashcards_user.JPG)
 
-![switch between different topics](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![switch between different topics](assets/images/switching_user.JPG)
 
-![contact form](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![contact form](assets/images/contact_form_user.JPG)
 
 
 
@@ -306,7 +306,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Game Rules |  Understand game rules and flow | Clear and straightforward rules, easy grasp of gameplay | Works as expected |
 
-![rules](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![rules](assets/images/rules_user.JPG)
 
 
 
