@@ -138,11 +138,19 @@ The website's layout is simple and intuitive, with consistent aesthetics through
 5. Navigation Buttons: Enable users to move between sets of questions.
 6. Tally Table: Tracks user's performance with correct and incorrect answers.
 
+# science flash card
+![wireframes-home](assets/css/docs/features/wireframes/main_page_wireframe.JPG)
+
 #### Contact form
 
 - A contact page with a contact form that enables users to email the developer with questions or comments 
 
+# Contact form
+![wireframes-home](assets/css/docs/features/wireframes/contact_form_wireframe.JPG)
+
 #### 404 error page
 
 - A separate 404 error page
+
+![wireframes-home](assets/css/docs/features/wireframes/404_error_wireframe.JPG)
 
