@@ -172,7 +172,7 @@ button:hover {
 /* Hint button styles */
 #hintButton {
     background-color: #ff0000;
-    color: #ffffff;
+    color: #000000; /* This has been changed */
     border-radius: 25px;
     border: none;
     font-size: 1em;
