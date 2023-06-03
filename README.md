@@ -436,4 +436,15 @@ The website was deployed using GitHub Pages by undertaken these stages:
 4. After the webpage refreshes automaticaly you will se a ribbon on the top saying: "Your site is published at https://mabdillahi88.github.io/CI_PP2_SCIENCE_FLASHCARDS/
 
 
+### Forking the GitHub Repository
+1. Go to the GitHub repository
+2. Press on Fork button in top right corner
 
+### Making a Local Clone
+1. Go to the GitHub repository 
+2. Find the Code button above the list of files and press it
+3. Highlight the "HTTPS" button to clone with HTTPS and copy the link
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone
