@@ -225,19 +225,30 @@ contact_form [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3
 ### Accessibility
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
 
-index.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/index.html) 
+index.html [results](https://wave.webaim.org/report#/https://mabdillahi88.github.io/CI_PP2_SCIENCE_FLASHCARDS/index.html) 
 
-about.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/about.html)
 
-team.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/team.html)
+contact.html [results](https://wave.webaim.org/report#/https://mabdillahi88.github.io/CI_PP2_SCIENCE_FLASHCARDS/contact_form.html)
 
-prices.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/prices.html)
+404.html [results](https://wave.webaim.org/report#/https://mabdillahi88.github.io/CI_PP2_SCIENCE_FLASHCARDS/index.html1)
 
-schedule.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/schedule.html)
 
-contact.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/contact.html)
+### Performance 
 
-404.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/404.html)
+Despite my efforts, I encountered persistent issues while testing the website's performance using Google Lighthouse in Chrome DevTools. I attempted various troubleshooting steps such as shutting down browsers and applications and trying different internet connections, but unfortunately, the problem persisted. I have documented the error messages that consistently appeared, and the tool froze every time.
+
+#### Index page
+
+![index.html](assets/css/docs/features/validations/index%20page.lighthouse.JPG)
+
+#### Contact form page
+
+![index.html](assets/css/docs/features/validations/contact_form.page.lighthouse.JPG)
+
+#### 404 error page
+
+![index.html](assets/css/docs/features/validations/404_error%20page.lighthouse.JPG)
+
 
 ## Features
 
