@@ -374,3 +374,30 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 ![game](assets/images/science_flashcards_user.JPG)
 
 
+
+9. As a first-time user, I want confirmation that my message was sent.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Message Confirmation |  Submit a message through the contact form | Receive a confirmation message indicating successful submission | Works as expected |
+
+![confirmation message](assets/images/confirmation_user.JPG)
+
+
+10. As a site Owner , I want the Science Flash Card game to be easy to understand and play.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Easy-to-Understand Game |  Explore and play the Science Flash Card game | Clear and straightforward instructions | Works as expected |
+
+![simple instructions](assets/images/instructions_user.JPG)
+
+
+11. As a site Owner, I expect the game to work well on any device I use.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Device Compatibility |  Access game on different devices | Able to use the game on computers, tablets, and phones | Works as expected |
+
+![use on iphone 5](assets/images/iphone5_user.JPG)
+
