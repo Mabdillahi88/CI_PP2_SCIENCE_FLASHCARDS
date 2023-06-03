@@ -298,7 +298,6 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 ![contact form](assets/images/contact_form_user.JPG)
 
 
-
 2. As a first-time user, I expect the game's rules to be straightforward and easy to understand, so I can 
    quickly grasp how to play and learn from the flashcards.
 
@@ -426,3 +425,15 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 When devices were switched, the games were not responsive. | To account for the varied widths of devices, media query was utilized
+
+
+## Deployment
+
+The website was deployed using GitHub Pages by undertaken these stages:
+1. In the GitHub repository navigate to the Settings tab
+2. On the left hand menu select Pages
+3. For the source select Branch: master
+4. After the webpage refreshes automaticaly you will se a ribbon on the top saying: "Your site is published at https://mabdillahi88.github.io/CI_PP2_SCIENCE_FLASHCARDS/
+
+
+
