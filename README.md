@@ -293,3 +293,30 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Explore Game and contact form |  Navigate and switch topics and contact form | Easy exploration | Works as expected |
 
+![science flash page](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+![switch between different topics](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+![contact form](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+
+
+2. As a first-time user, I expect the game's rules to be straightforward and easy to understand, so I can 
+   quickly grasp how to play and learn from the flashcards.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Game Rules |  Understand game rules and flow | Clear and straightforward rules, easy grasp of gameplay | Works as expected |
+
+![rules](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+
+3. As a first-time user, I want the game to be accessible on various devices, such as computers, tablets 
+   or phones, allowing me to conveniently learn anywhere.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Device Compatibility |  Access game on different devices | Able to use the game on computers, tablets, and phones | Works as expected |
+
+![rules](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
