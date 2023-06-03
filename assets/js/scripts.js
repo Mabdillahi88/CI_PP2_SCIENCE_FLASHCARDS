@@ -159,7 +159,7 @@ function prevTopic() {
     currentSet = totalSets - 1; // loop back to the last set if at the first set
   }
   currentTopic = Object.keys(flashCardsSeries)[currentSet];
-  hintsRemaining = 8; // reset hints for each set of questions
+  hintsRemaining = 2; // reset hints for each set of questions
 
   createFlashCards(currentTopic);
 }
