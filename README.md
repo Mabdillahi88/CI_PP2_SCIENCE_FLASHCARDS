@@ -146,11 +146,50 @@ The website's layout is simple and intuitive, with consistent aesthetics through
 - A contact page with a contact form that enables users to email the developer with questions or comments 
 
 # Contact form
-![wireframes-home](assets/css/docs/features/wireframes/contact_form_wireframe.JPG)
+![wireframes-contact](assets/css/docs/features/wireframes/contact_form_wireframe.JPG)
 
 #### 404 error page
 
 - A separate 404 error page
 
-![wireframes-home](assets/css/docs/features/wireframes/404_error_wireframe.JPG)
+![wireframes-404](assets/css/docs/features/wireframes/404_error_wireframe.JPG)
 
+
+## Technologies Used
+
+### Languages
+
+- HTML
+- CSS
+- JavaScript
+
+### Frameworks & Tools
+
+- Git
+- GitHub
+- Gitpod
+- Balsamiq
+- Google Fonts
+- Adobe Color
+- Font Awsome
+- Favicon
+- Bootstrap
+- Email js
+- Chrome development tools
+
+# Tools for validation
+
+## Testing
+
+### HTML Validation
+
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
+
+index.html [results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmabdillahi88.github.io%2FCI_PP2_SCIENCE_FLASHCARDS%2Findex.html) 
+
+
+contact.html [results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmabdillahi88.github.io%2FCI_PP2_SCIENCE_FLASHCARDS%2Fcontact_form.html)
+
+404.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjamie2210.github.io%2FCI_MS1_TBC%2F404.html)
+
+![404](assets/css/docs/features/validations/404_error%20page.%20html.validation.JPG)
