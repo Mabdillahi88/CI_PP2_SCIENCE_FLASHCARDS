@@ -190,7 +190,6 @@ index.html [results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F
 
 contact.html [results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmabdillahi88.github.io%2FCI_PP2_SCIENCE_FLASHCARDS%2Fcontact_form.html)
 
-404.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjamie2210.github.io%2FCI_MS1_TBC%2F404.html)
 
 ![404](assets/css/docs/features/validations/404_error%20page.%20html.validation.JPG)
 
