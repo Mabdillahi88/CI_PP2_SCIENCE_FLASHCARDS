@@ -351,3 +351,26 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 
 ![tally](assets/images/tally_user.JPG)
 
+
+
+7. As a first-time user, I want an easy way to provide feedback to the game's creator, sharing my  
+   thoughts or reporting any issues.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  contact form |  Provide feedback to the game's creator | Easy and accessible feedback submission process | Works as expected |
+
+![contact form](assets/images/contact_form_user.JPG)
+
+
+
+8. As a first-time user, I expect the Science Flash Card game to run smoothly and have all the features 
+   working properly for a seamless learning experience.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Smooth Experience |  Use the Science Flash Card game | Game runs smoothly without glitches or feature malfunctions | Works as expected |
+
+![game](assets/images/science_flashcards_user.JPG)
+
+
