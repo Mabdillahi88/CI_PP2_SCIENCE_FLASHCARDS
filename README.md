@@ -392,3 +392,23 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 |  Easy-to-Understand Game |  Explore and play the Science Flash Card game | Clear and straightforward instructions | Works as expected |
 
 ![simple instructions](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+
+
+11. As a site Owner, I expect the game to work well on any device I use.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Device Compatibility |  Access game on different devices | Able to use the game on computers, tablets, and phones | Works as expected |
+
+![use on iphone 5](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+
+
+12. As a site Owner, if I enter an invalid URL, I want to see a helpful 404 error page instead of being confused.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  User-Friendly 404 Error Page |  Access an invalid URL | Display a helpful 404 error page instead of confusion | Works as expected |
+
+![404 error page](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
