@@ -317,7 +317,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Device Compatibility |  Access game on different devices | Able to use the game on computers, tablets, and phones | Works as expected |
 
-![use on iphone 5](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![use on iphone 5](assets/images/iphone5_user.JPG)
 
 
 
@@ -328,7 +328,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Clear and Concise Content |  Read flashcard information | Accurate and concise information presented on each flashcard | Works as expected |
 
-![science content](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![science content](assets/images/science_content_user.JPG)
 
 
 
@@ -339,7 +339,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Hints |  Request assistance with flashcards | Availability of limited hints, aiding learning | Works as expected |
 
-![hints](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![hints](assets/images/hints_user.JPG)
 
 
 6. As a first-time user, I find it beneficial to be able to track my progress and view my performance  
@@ -349,7 +349,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Progress Tracking |  Track progress and view performance | Clear visibility of progress and performance metrics | Works as expected |
 
-![tally](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![tally](assets/images/tally_user.JPG)
 
 
 
@@ -360,7 +360,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  contact form |  Provide feedback to the game's creator | Easy and accessible feedback submission process | Works as expected |
 
-![contact form](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![contact form](assets/images/contact_form_user.JPG)
 
 
 
@@ -371,7 +371,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Smooth Experience |  Use the Science Flash Card game | Game runs smoothly without glitches or feature malfunctions | Works as expected |
 
-![game](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![game](assets/images/science_flashcards_user.JPG)
 
 
 
@@ -381,8 +381,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Message Confirmation |  Submit a message through the contact form | Receive a confirmation message indicating successful submission | Works as expected |
 
-![confirmation message](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
-
+![confirmation message](assets/images/confirmation_user.JPG)
 
 
 10. As a site Owner , I want the Science Flash Card game to be easy to understand and play.
@@ -391,8 +390,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Easy-to-Understand Game |  Explore and play the Science Flash Card game | Clear and straightforward instructions | Works as expected |
 
-![simple instructions](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
-
+![simple instructions](assets/images/instructions_user.JPG)
 
 
 11. As a site Owner, I expect the game to work well on any device I use.
@@ -401,7 +399,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Device Compatibility |  Access game on different devices | Able to use the game on computers, tablets, and phones | Works as expected |
 
-![use on iphone 5](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![use on iphone 5](assets/images/iphone5_user.JPG)
 
 
 
@@ -411,7 +409,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  User-Friendly 404 Error Page |  Access an invalid URL | Display a helpful 404 error page instead of confusion | Works as expected |
 
-![404 error page](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![404 error page](assets/images/404_error_user.JPG)
 
 
 13. As a site Owner, I want to have a straightforward way to contact the site owner and share my comments or feedback.
@@ -420,4 +418,5 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  contact form |  Provide feedback to the game's creator | Easy and accessible feedback submission process | Works as expected |
 
-![contact form](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+![contact form](assets/images/contact_form_user.JPG)
+
