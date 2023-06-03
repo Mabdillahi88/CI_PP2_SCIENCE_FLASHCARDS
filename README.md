@@ -129,6 +129,7 @@ The versatile choice of Arial, sans-serif font brings a host of benefits to your
 
 The website's layout is simple and intuitive, with consistent aesthetics throughout. It offers a seamless and visually appealing user experience, making it easy to navigate and enjoy the game.
 
+
 ### The game's screens are as follows:
 
 #### Science flash cards
@@ -148,6 +149,7 @@ The website's layout is simple and intuitive, with consistent aesthetics through
 7. tally table that tracks and displays my performance, showing the number of correct and incorrect 
    answers, so that I can monitor my progress and identify areas for improvement.
 
+### Wireframes
 
 # science flash card
 ![wireframes-home](assets/css/docs/features/wireframes/main_page_wireframe.JPG)
@@ -188,7 +190,8 @@ The website's layout is simple and intuitive, with consistent aesthetics through
 - Email js
 - Chrome development tools
 
-# Tools for validation
+
+### Tools for validation
 
 - [WC3 Validator](https://validator.w3.org/)
 - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
@@ -197,10 +200,11 @@ The website's layout is simple and intuitive, with consistent aesthetics through
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 
 - [Am I Responsive](http://ami.responsivedesign.is/)
 
+## Features
 
-## Testing
+### Testing
 
-### HTML Validation
+#### HTML Validation
 
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
 
@@ -212,7 +216,7 @@ contact.html [results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%
 
 ![404](assets/css/docs/features/validations/404_error%20page.%20html.validation.JPG)
 
-### CSS Validation
+#### CSS Validation
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
 
 style.css [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmabdillahi88.github.io%2FCI_PP2_SCIENCE_FLASHCARDS%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
@@ -222,7 +226,7 @@ contact_form [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3
 ![404](assets/css/docs/features/validations/404_error%20page.%20css.validation.JPG)
 
 
-### Accessibility
+#### Accessibility
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
 
 index.html [results](https://wave.webaim.org/report#/https://mabdillahi88.github.io/CI_PP2_SCIENCE_FLASHCARDS/index.html) 
@@ -233,7 +237,7 @@ contact.html [results](https://wave.webaim.org/report#/https://mabdillahi88.gith
 404.html [results](https://wave.webaim.org/report#/https://mabdillahi88.github.io/CI_PP2_SCIENCE_FLASHCARDS/index.html1)
 
 
-### Performance 
+#### Performance 
 
 Despite my efforts, I encountered persistent issues while testing the website's performance using Google Lighthouse in Chrome DevTools. I attempted various troubleshooting steps such as shutting down browsers and applications and trying different internet connections, but unfortunately, the problem persisted. I have documented the error messages that consistently appeared, and the tool froze every time.
 
@@ -249,8 +253,35 @@ Despite my efforts, I encountered persistent issues while testing the website's 
 
 ![index.html](assets/css/docs/features/validations/404_error%20page.lighthouse.JPG)
 
+### JavaScript Validation
 
-## Features
+The Javascript files were checked using JSHint JS Validation Service. No major problems were discovered.
 
-### Navigation Bar
+#### Index page
 
+![index.html](assets/css/docs/features/validations/index.js_validation.JPG)
+
+#### Contact form page
+
+![index.html](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+# Testing
+
+### Performing tests on various devices 
+The website was tested on the following devices:
+- Surface Pro 7 
+- iPhone 5/SE
+- iPad air
+
+Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpages across all feasible device combinations
+
+### Browser compatibility
+
+- The following browsers have been put to the test:
+  - Googe Chrome 
+  - Firefox Browser 
+
+ 
+### Testing 
+
+  #### Testing user stories
