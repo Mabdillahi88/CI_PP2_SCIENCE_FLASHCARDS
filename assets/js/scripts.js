@@ -1,4 +1,5 @@
-// An object to store our flash cards arrays, organized by topic
+/*jshint esversion: 6 */
+// We're making a revision aid with flash cards on different subjects
 const flashCardsSeries = {
   physics: [
     { keyword: 'Force', definition: 'A push or pull upon an object resulting from the object\'s interaction with another object.' },
@@ -7,7 +8,7 @@ const flashCardsSeries = {
     { keyword: 'Renewables', definition: 'Sustainable energy sources.' },
     { keyword: 'Fossil Fuels', definition: 'Ancient organic remains as fuel.' },
     { keyword: 'Efficiency', definition: 'Maximizing output, minimizing waste.' },
-    // add more Physics flashcards here...
+    
   ],
   biology: [
     { keyword: 'Cell', definition: 'The basic structural, functional, and biological unit of all known organisms.' },
@@ -16,7 +17,7 @@ const flashCardsSeries = {
     { keyword: 'Cell', definition: 'Basic unit of life.' },
     { keyword: 'Mitosis', definition: 'Cell division.' },
     { keyword: 'Photosynthesis', definition: 'Light to energy.' },
-    // add more Biology flashcards here...
+    
   ],
   chemistry: [
     { keyword: 'Atom', definition: 'The smallest unit of a chemical element that retains its chemical properties.' },
@@ -25,9 +26,9 @@ const flashCardsSeries = {
     { keyword: 'Molecule', definition: 'Chemical structure.' },
     { keyword: 'Acid', definition: 'Sour-tasting compound.' },
     { keyword: 'Base', definition: 'Alkaline compound.' },
-    // add more Chemistry flashcards here...
+    
   ],
-  // add more topics here...
+  
 };
 
 let currentTopic = 'physics'; // start with Physics flashcards
