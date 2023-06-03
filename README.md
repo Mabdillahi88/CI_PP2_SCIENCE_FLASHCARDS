@@ -98,13 +98,13 @@ Science Flash Cards aims to create an interactive and user-friendly  game that t
 
 ### Site Owner
 
-10. As a first-time user, I want the Science Flash Card game to be easy to understand and play.
+10. As a site Owner , I want the Science Flash Card game to be easy to understand and play.
 
-11. As a first-time user, I expect the game to work well on any device I use.
+11. As a site Owner, I expect the game to work well on any device I use.
 
-12. If I enter an invalid URL, I want to see a helpful 404 error page instead of being confused.
+12. As a site Owner, if I enter an invalid URL, I want to see a helpful 404 error page instead of being confused.
 
-13. I want to have a straightforward way to contact the site owner and share my comments or feedback.
+13. As a site Owner, I want to have a straightforward way to contact the site owner and share my comments or feedback.
 
 
 ## Design
@@ -132,19 +132,19 @@ The website's layout is simple and intuitive, with consistent aesthetics through
 
 #### Science flash cards
 
-1. navigation bar with links to different webpages, such as "Home" and "Contact Us," so that I can easily 
+ - navigation bar with links to different webpages, such as "Home" and "Contact Us," so that I can easily 
    navigate between different sections of the website.
-2. clear instructions that provide me with clear guidance on how to play and interact 
+ - clear instructions that provide me with clear guidance on how to play and interact 
    with the flashcards, so that I can understand the rules and instructions of the game.
-3. sets of questions presented as flashcards, where each flashcard displays scientific terms and their 
+ - sets of questions presented as flashcards, where each flashcard displays scientific terms and their 
    corresponding definitions, so that I can learn and reinforce my knowledge in science.
-4. "Check Answers" button that allows me to verify my answers for each flashcard, so that I can evaluate 
+ - "Check Answers" button that allows me to verify my answers for each flashcard, so that I can evaluate 
    my understanding and accuracy.
-5. "Hint" feature that provides additional assistance or clues for each flashcard, so that I can get help 
+ - "Hint" feature that provides additional assistance or clues for each flashcard, so that I can get help 
    when I am unsure of the correct answer.
-6. navigation buttons, such as "Previous" and "Next," that enable me to move between different sets of 
+ - navigation buttons, such as "Previous" and "Next," that enable me to move between different sets of 
    questions or flashcards, so that I can easily navigate and explore the content.
-7. tally table that tracks and displays my performance, showing the number of correct and incorrect 
+ - tally table that tracks and displays my performance, showing the number of correct and incorrect 
    answers, so that I can monitor my progress and identify areas for improvement.
 
 ### Wireframes
@@ -372,3 +372,23 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 |  Smooth Experience |  Use the Science Flash Card game | Game runs smoothly without glitches or feature malfunctions | Works as expected |
 
 ![game](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+
+
+9. As a first-time user, I want confirmation that my message was sent.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Message Confirmation |  Submit a message through the contact form | Receive a confirmation message indicating successful submission | Works as expected |
+
+![confirmation message](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+
+
+10. As a site Owner , I want the Science Flash Card game to be easy to understand and play.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  Easy-to-Understand Game |  Explore and play the Science Flash Card game | Clear and straightforward instructions | Works as expected |
+
+![simple instructions](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
