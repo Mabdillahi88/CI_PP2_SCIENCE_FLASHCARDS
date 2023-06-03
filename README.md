@@ -412,3 +412,12 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 |  User-Friendly 404 Error Page |  Access an invalid URL | Display a helpful 404 error page instead of confusion | Works as expected |
 
 ![404 error page](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
+
+
+13. As a site Owner, I want to have a straightforward way to contact the site owner and share my comments or feedback.
+
+| **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
+| ----------------- | ----------------- | ------------------------------------ | ----------------- |
+|  contact form |  Provide feedback to the game's creator | Easy and accessible feedback submission process | Works as expected |
+
+![contact form](assets/css/docs/features/validations/contact_form.page.js.validation.JPG)
