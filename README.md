@@ -222,7 +222,22 @@ contact_form [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3
 ![404](assets/css/docs/features/validations/404_error%20page.%20css.validation.JPG)
 
 
+### Accessibility
+The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
 
+index.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/index.html) 
+
+about.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/about.html)
+
+team.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/team.html)
+
+prices.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/prices.html)
+
+schedule.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/schedule.html)
+
+contact.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/contact.html)
+
+404.html [results](https://wave.webaim.org/report#/https://jamie2210.github.io/CI_MS1_TBC/404.html)
 
 ## Features
 
