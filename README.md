@@ -448,3 +448,18 @@ The website was deployed using GitHub Pages by undertaken these stages:
 5. Change the current working directory to the one where you want the cloned directory
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7. Press Enter to create your local clone
+
+
+## Credits
+
+### Code
+
+ - Responsive  nav was build on the inspiration using description on https://github.com/bedimcode/ 
+    esponsive-navbar and https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+ - Build on the inspiration from https://github.com/niilz/flashcards and https://www.youtube.com/watch? 
+    v=urf3kHQX7aI&t=2874s
+ - Email js tutorial help was employed to develop a contact form that sent an email to the specified 
+   email address.
+ - 404 page was build using descriptions on https://godnondsilva.github.io/
+ - contact form was build using descriptions on https://www.w3schools.com/howto/howto_css_contact_form. 
+   asp

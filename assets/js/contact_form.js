@@ -1,3 +1,6 @@
+
+// This is not my code but modified it and I have credited it  the readme file
+// email js 
 /*jshint esversion: 6 */
 
 // Add event listener to the form submit button
