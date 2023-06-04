@@ -8,17 +8,18 @@ body {
     justify-content: center;
     font-family: Arial, sans-serif;
     padding: 1em;
-}
-
-/* This section sets the color, alignment, and bottom margin of all h1 (main heading) elements. */
-h1 {
+    overflow: hidden;
+  }
+  
+  /* This section sets the color, alignment, and bottom margin of all h1 (main heading) elements. */
+  h1 {
     color: #3c4043;
     text-align: center;
     margin-bottom: 1em;
-}
-
-/* This section styles the navigation bar. It sets the width, background color, padding, and item alignment. It also adds a shadow effect. */
-nav {
+  }
+  
+  /* This section styles the navigation bar. It sets the width, background color, padding, and item alignment. It also adds a shadow effect. */
+  nav {
     width: 100%;
     background: #fff;
     padding: 1em 2em;
@@ -29,71 +30,71 @@ nav {
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-}
-
-/* This section removes the default bullet points from ul elements in the navigation bar and sets their display to flex. */
-nav ul {
+  }
+  
+  /* This section removes the default bullet points from ul elements in the navigation bar and sets their display to flex. */
+  nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-}
-
-/* This section styles the list items in the navigation bar. It sets the margin between each item. */
-nav ul li {
+  }
+  
+  /* This section styles the list items in the navigation bar. It sets the margin between each item. */
+  nav ul li {
     margin: 0 2em;
-}
-
-/* This section styles the anchor (a) elements within the list items of the navigation bar. It removes the underline from the links and sets their color. It also adds a hover effect to change the color when the mouse is over the link. */
-nav ul li a {
+  }
+  
+  /* This section styles the anchor (a) elements within the list items of the navigation bar. It removes the underline from the links and sets their color. It also adds a hover effect to change the color when the mouse is over the link. */
+  nav ul li a {
     text-decoration: none;
     color: #3c4043;
     transition: color .3s ease-in-out;
-}
-
-nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
     color: #6a2c70;
-}
-
-/* This section sets the layout for the flash cards container. It uses a grid layout and sets the gap between the cards and the width of the container. */
-#flashCardsContainer {
+  }
+  
+  /* This section sets the layout for the flash cards container. It uses a grid layout and sets the gap between the cards and the width of the container. */
+  #flashCardsContainer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em;
     width: 100%;
-}
-
-/* This section sets the style for each individual flash card. It sets the background color, border radius for rounded corners, shadow effect, padding and adds a hover effect to scale the card size slightly when the mouse is over the card. */
-.flashCard {
+  }
+  
+  /* This section sets the style for each individual flash card. It sets the background color, border radius for rounded corners, shadow effect, padding and adds a hover effect to scale the card size slightly when the mouse is over the card. */
+  .flashCard {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
     padding: 1em;
     transition: transform .2s ease-in-out;
-}
-
-.flashCard:hover {
+  }
+  
+  .flashCard:hover {
     transform: scale(1.03);
-}
-
-/* This section sets the style for the keyword in each flash card. It sets the font size, color, and bottom margin. */
-.flashCard .keyword {
+  }
+  
+  /* This section sets the style for the keyword in each flash card. It sets the font size, color, and bottom margin. */
+  .flashCard .keyword {
     font-size: 1.5em;
     color: #3c4043;
     margin-bottom: 1em;
-}
-
-/* This section sets the style for the select elements in each flash card. It sets the width, padding, border radius for rounded corners, border color, and font size. */
-.flashCard select {
+  }
+  
+  /* This section sets the style for the select elements in each flash card. It sets the width, padding, border radius for rounded corners, border color, and font size. */
+  .flashCard select {
     width: 100%;
     padding: 0.5em;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 1em;
-}
-
-/* This section sets the style for the button elements. It sets the display, width, height, margin, background color, text color, border radius for rounded corners, border style, and font size. It also adds a hover effect to change the background color when the mouse is over the button and changes the cursor to a pointer. */
-button {
+  }
+  
+  /* This section sets the style for the button elements. It sets the display, width, height, margin, background color, text color, border radius for rounded corners, border style, and font size. It also adds a hover effect to change the background color when the mouse is over the button and changes the cursor to a pointer. */
+  button {
     display: block;
     width: 100%;
     height: 50px;
@@ -104,90 +105,90 @@ button {
     border: none;
     font-size: 1em;
     transition: background .3s ease-in-out;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     background: #b83b5e;
     cursor: pointer;
-}
-
-/* This section sets the style for the correct answer. It changes the border color and background color. */
-.correct {
+  }
+  
+  /* This section sets the style for the correct answer. It changes the border color and background color. */
+  .correct {
     border-color: #00c853;
     background-color: #e8f5e9;
-}
-
-/* This section sets the style for the incorrect answer. It changes the border color and background color. */
-.incorrect {
+  }
+  
+  /* This section sets the style for the incorrect answer. It changes the border color and background color. */
+  .incorrect {
     border-color: #d50000;
     background-color: #ffebee;
-}
-
-/* This section adjusts the flash cards layout for medium devices like tablets. It sets the layout to two columns and increases the padding of each card. */
-@media only screen and (min-width: 500px) {
+  }
+  
+  /* This section adjusts the flash cards layout for medium devices like tablets. It sets the layout to two columns and increases the padding of each card. */
+  @media only screen and (min-width: 500px) {
     #flashCardsContainer {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-
+  
     .flashCard {
-        padding: 1.5em;
+      padding: 1.5em;
     }
-}
-
-/* This section adjusts the flash cards layout for large devices like desktops. It sets the layout to three columns and further increases the padding of each card. It also sets the width of the button elements. */
-@media only screen and (min-width: 800px) {
+  }
+  
+  /* This section adjusts the flash cards layout for large devices like desktops. It sets the layout to three columns and further increases the padding of each card. It also sets the width of the button elements. */
+  @media only screen and (min-width: 800px) {
     #flashCardsContainer {
-        grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
-
+  
     .flashCard {
-        padding: 2em;
+      padding: 2em;
     }
-
+  
     button {
-        width: 200px;
+      width: 200px;
     }
-}
-
-/* This section styles the tally chart. It sets the top margin. */
-#tallyChart {
+  }
+  
+  /* This section styles the tally chart. It sets the top margin. */
+  #tallyChart {
     margin-top: 2em;
-}
-
-/* This section styles the table within the tally chart. It sets the width and collapses the borders into a single border. */
-#tallyChart table {
+  }
+  
+  /* This section styles the table within the tally chart. It sets the width and collapses the borders into a single border. */
+  #tallyChart table {
     width: 100%;
     border-collapse: collapse;
-}
-
-/* This section styles the th (table heading) and td (table data) elements within the tally chart. It sets the padding, alignment, and border. */
-#tallyChart th,
-#tallyChart td {
+  }
+  
+  /* This section styles the th (table heading) and td (table data) elements within the tally chart. It sets the padding, alignment, and border. */
+  #tallyChart th,
+  #tallyChart td {
     padding: 0.5em 1em;
     text-align: center;
     border: 1px solid #ccc;
-}
-
-/* This section styles the table headings in the tally chart. It sets the background color and font weight. */
-#tallyChart th {
+  }
+  
+  /* This section styles the table headings in the tally chart. It sets the background color and font weight. */
+  #tallyChart th {
     background-color: #f5f5e5;
     font-weight: bold;
-}
-
-/* This section styles the table data in the tally chart. It sets the font weight. */
-#tallyChart td {
+  }
+  
+  /* This section styles the table data in the tally chart. It sets the font weight. */
+  #tallyChart td {
     font-weight: normal;
-}
-
-/* This section styles the progress indicator. It sets the font size, font weight, and bottom margin. */
-#progressIndicator {
+  }
+  
+  /* This section styles the progress indicator. It sets the font size, font weight, and bottom margin. */
+  #progressIndicator {
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 1em;
-}
-
-/* This section styles the hint button. It sets the background color, text color, border radius for rounded corners, border style, font size, padding, bottom margin, and cursor style. */
-#hintButton {
+  }
+  
+  /* This section styles the hint button. It sets the background color, text color, border radius for rounded corners, border style, font size, padding, bottom margin, and cursor style. */
+  #hintButton {
     background-color: #000000;
     color: #FFFFFF;
     border-radius: 25px;
@@ -196,16 +197,16 @@ button:hover {
     padding: 0.5em 1em;
     margin-bottom: 1em;
     cursor: pointer;
-}
-
-/* This section styles the disabled hint button. It changes the background color and cursor style. */
-#hintButton:disabled {
+  }
+  
+  /* This section styles the disabled hint button. It changes the background color and cursor style. */
+  #hintButton:disabled {
     background-color: #ccc;
     cursor: not-allowed;
-}
-
-/* This section styles the timer bar container. It sets the width, height, background color, border radius for rounded corners, bottom margin, and overflow behavior. */
-#timerBarContainer {
+  }
+  
+  /* This section styles the timer bar container. It sets the width, height, background color, border radius for rounded corners, bottom margin, and overflow behavior. */
+  #timerBarContainer {
     width: 100%;
     height: 10px;
     background-color: #ccc;
@@ -213,11 +214,12 @@ button:hover {
     margin-bottom: 1em;
     overflow: hidden;
     display: block;
-}
-
-/* This section styles the timer bar itself. It sets the height, background color, and transition effect for the width. */
-#timerBar {
+  }
+  
+  /* This section styles the timer bar itself. It sets the height, background color, and transition effect for the width. */
+  #timerBar {
     height: 100%;
     background-color: #6a2c70;
     transition: width 1s linear;
-}
+  }
+  

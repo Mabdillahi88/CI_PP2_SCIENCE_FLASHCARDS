@@ -463,3 +463,10 @@ The website was deployed using GitHub Pages by undertaken these stages:
  - 404 page was build using descriptions on https://godnondsilva.github.io/
  - contact form was build using descriptions on https://www.w3schools.com/howto/howto_css_contact_form. 
    asp
+
+
+## Acknowledgements
+
+I would like to thank:
+- My wife Filsan and my kids for all their patience, love and motivation to work on the project. 
+- My mentor Mo Shami for his feedback, advice and support.
