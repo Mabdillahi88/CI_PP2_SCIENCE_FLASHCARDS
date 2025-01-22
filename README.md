@@ -408,7 +408,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  User-Friendly 404 Error Page |  Access an invalid URL | Display a helpful 404 error page instead of confusion | Works as expected |
 
-![404 error page](assets/images/404_error_user.JPG)
+![404 error page](assets/images/images2/404_error_user.png)
 
 
 13. As a site Owner, I want to have a straightforward way to contact the site owner and share my comments or feedback.
