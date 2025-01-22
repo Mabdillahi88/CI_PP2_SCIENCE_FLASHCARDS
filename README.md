@@ -85,7 +85,7 @@ Science Flash Cards aims to create an interactive and user-friendly  game that t
 3. As a first-time user, I want the game to be accessible on various devices, such as computers, tablets 
    or phones, allowing me to conveniently learn anywhere.
 4. As a first-time user, I value having clear and concise information on each flashcard to help me learn 
-   scientific terms accurately and efficiently.
+   scientific terms accurately and efficiently and under timed condition using a timer.
 5. As a first-time user, I would appreciate having hints available when I need assistance with the 
    flashcards, making it easier for me to learn and understand the content.
 6. As a first-time user, I find it beneficial to be able to track my progress and view my performance  
@@ -321,11 +321,11 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 
 
 4. As a first-time user, I value having clear and concise information on each flashcard to help me learn 
-   scientific terms accurately and efficiently.
+   scientific terms accurately and efficiently and under time conditions with a timer.
 
 | **Feature**       | **Action**        | **Expected Result**                  | **Actual Result** |
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
-|  Clear and Concise Content |  Read flashcard information | Accurate and concise information presented on each flashcard | Works as expected |
+|  Clear and Concise Content |  Read flashcard information and timer is visible | Accurate and concise information presented on each flashcard and timer is counting down | Works as expected |
 
 ![science content](assets/images/science_content_user.JPG)
 

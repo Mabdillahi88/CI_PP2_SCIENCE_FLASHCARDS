@@ -1,4 +1,4 @@
-/* General Body Styling */
+/* General Styling */
 body {
   background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);
   height: 100vh;
@@ -9,30 +9,14 @@ body {
   padding: 1em;
   overflow: auto;
   margin: 0;
-  animation: gradientShift 8s infinite alternate; /* Dynamic gradient animation */
+  animation: gradientShift 8s infinite alternate;
 }
 
 /* Animated Gradient */
 @keyframes gradientShift {
-  0% {
-    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);
-  }
-  50% {
-    background: linear-gradient(45deg, #ffd1dc, #ffc4c8);
-  }
-  100% {
-    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);
-  }
-}
-
-/* Main Title */
-h1 {
-  color: #3c4043;
-  text-align: center;
-  margin-bottom: 1em;
-  font-size: 2.8em;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  0% { background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%); }
+  50% { background: linear-gradient(45deg, #ffd1dc, #ffc4c8); }
+  100% { background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%); }
 }
 
 /* Navigation Bar */
@@ -49,170 +33,18 @@ nav {
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   gap: 2em;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #3c4043;
-  font-weight: bold;
-  font-size: 1.2em;
-  padding: 10px 20px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  transform: scale(1.1);
-}
-
-nav ul li a.active {
-  background-color: #f5c000;
-  color: #000;
-}
-
-/* Instructions Section */
-#instructions {
-  text-align: center;
-  margin-bottom: 2em;
-  color: #3c4043;
-  font-size: 1.3em;
-  line-height: 1.8;
-  padding: 1em;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Flash Cards */
-#flashCardsContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5em;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.flashCard {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-  padding: 1em;
-  text-align: center;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
-}
-
-.flashCard:hover {
-  transform: translateY(-5px);
-  background-color: #f8f8f8;
-}
-
-.flashCard .keyword {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 1em;
-  color: #6a2c70;
-}
-
-/* Dropdown Styling */
-.flashCard select {
-  width: 100%;
-  padding: 0.5em;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1em;
-  background: #f9f9f9;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.flashCard select:focus {
-  border-color: #6a2c70;
-  box-shadow: 0px 0px 8px rgba(106, 44, 112, 0.5);
-}
-
-/* Correct and Incorrect Styles */
-.correct {
-  border: 2px solid #00c853;
-  background-color: #e8f5e9;
-}
-
-.incorrect {
-  border: 2px solid #d50000;
-  background-color: #ffebee;
-}
-
-.hint-highlight {
-  border: 2px dashed #fbc02d;
-}
-
-/* Buttons */
-button {
-  padding: 0.8em 1.5em;
-  background: #6a2c70;
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-  background: #b83b5e;
-  transform: scale(1.05);
-}
-
-#hintButton:disabled {
-  background: #ccc;
-  cursor: not-allowed;
-}
-
-/* Circular Timer Styles */
-.circle-timer {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  margin: 1em auto;
-}
-
-.progress-circle {
-  transform: rotate(-90deg);
-  transform-origin: center;
-}
-
-.background-circle {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 10;
-}
-
-.foreground-circle {
-  fill: none;
-  stroke: #6a2c70;
-  stroke-width: 10;
-  stroke-linecap: round;
-  transition: stroke-dashoffset 1s linear;
-}
-
-.timer-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #3c4043;
-}
-
 /* Tally Chart */
 #tallyChart {
-  margin-top: 1em;
+  margin-top: 2em;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #tallyChart table {
@@ -221,50 +53,21 @@ button:hover {
   width: 50%;
 }
 
-#tallyChart th, #tallyChart td {
-  padding: 0.5em 1em;
+#tallyChart th,
+#tallyChart td {
+  padding: 10px;
   border: 1px solid #ccc;
-  font-size: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  color: #3c4043;
 }
 
 #tallyChart th {
-  background-color: #f5f5f5;
+  background-color: #ffd1dc;
   font-weight: bold;
 }
 
 #tallyChart td {
   background-color: #fff;
-}
-
-/* Progress Indicator */
-#progressIndicator {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 1em auto;
-  color: #6a2c70;
-}
-
-/* Navigation Buttons */
-.navigation-buttons {
-  display: flex;
-  justify-content: space-between;
-  max-width: 300px;
-  margin: 2em auto;
-}
-
-.navigation-buttons button {
-  width: 45%;
-}
-
-/* Responsive Design */
-@media (min-width: 600px) {
-  nav ul {
-    gap: 3em;
-  }
-}
-
-@media (min-width: 800px) {
-  #flashCardsContainer {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  font-weight: normal;
 }
