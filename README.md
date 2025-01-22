@@ -291,11 +291,11 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Explore Game and contact form |  Navigate and switch topics and contact form | Easy exploration | Works as expected |
 
-![science flash page](assets/images/science_flashcards_user.JPG)
+![science flash page](assets/images/images2/science_flashcards_user.png)
 
-![switch between different topics](assets/images/switching_user.JPG)
+![switch between different topics](assets/images/images2/switching_user.png)
 
-![contact form](assets/images/contact_form_user.JPG)
+![contact form](assets/images/images2/contact_form_user.png)
 
 
 2. As a first-time user, I expect the game's rules to be straightforward and easy to understand, so I can 
@@ -305,7 +305,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Game Rules |  Understand game rules and flow | Clear and straightforward rules, easy grasp of gameplay | Works as expected |
 
-![rules](assets/images/rules_user.JPG)
+![rules](assets/images/images2/rules_user.png)
 
 
 
@@ -316,7 +316,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Device Compatibility |  Access game on different devices | Able to use the game on computers, tablets, and phones | Works as expected |
 
-![use on iphone 5](assets/images/iphone5_user.JPG)
+![use on iphone 5](assets/images/images2/iphone5_user.png)
 
 
 
@@ -327,7 +327,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Clear and Concise Content |  Read flashcard information and timer is visible | Accurate and concise information presented on each flashcard and timer is counting down | Works as expected |
 
-![science content](assets/images/science_content_user.JPG)
+![science content](assets/images/images2/science_content_user.png)
 
 
 
