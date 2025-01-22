@@ -24,12 +24,12 @@ const flashCardsSeries = {
 };
 
 // Global variables
-let currentTopic = 'physics';
-let currentSet = 0;
+let currentTopic = 'physics'; // Default topic
+let currentSet = 0; // Current set index
 const totalSets = Object.keys(flashCardsSeries).length;
 
-let hintsRemaining = 2;
-let hintUsed = false;
+let hintsRemaining = 2; // Hints per topic
+let hintUsed = false; // Track if hint is used
 
 let timerInterval;
 const timerDuration = 15; // Timer duration in seconds
@@ -48,7 +48,7 @@ const prevButton = document.getElementById('prevButton');
 const timerText = document.getElementById('timerText');
 const foregroundCircle = document.querySelector('.foreground-circle');
 
-// Set the circumference of the circle
+// Set the circumference of the timer circle
 const radius = 45; // Matches the `r` in the SVG circle
 const circumference = 2 * Math.PI * radius;
 foregroundCircle.style.strokeDasharray = `${circumference} ${circumference}`;
@@ -112,6 +112,7 @@ function createFlashCards(topic) {
     flashCardsContainer.appendChild(cardElement);
   });
 
+  highlightActiveFlashcard(0); // Highlight the first flashcard initially
   updateProgressIndicator();
   resetTimer();
   startTimer();
@@ -182,6 +183,14 @@ function prevTopic() {
   currentTopic = Object.keys(flashCardsSeries)[currentSet];
   hintsRemaining = 2;
   createFlashCards(currentTopic);
+}
+
+// Highlight the active flashcard
+function highlightActiveFlashcard(cardIndex) {
+  const flashCards = document.querySelectorAll('.flashCard');
+  flashCards.forEach((card, index) => {
+    card.classList.toggle('active', index === cardIndex);
+  });
 }
 
 // Check answers
