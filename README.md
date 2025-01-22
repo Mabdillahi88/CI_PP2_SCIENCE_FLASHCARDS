@@ -370,7 +370,7 @@ Google Chrome Developer Tools Device Toggling was utilized to evaluate all webpa
 | ----------------- | ----------------- | ------------------------------------ | ----------------- |
 |  Smooth Experience |  Use the Science Flash Card game | Game runs smoothly without glitches or feature malfunctions | Works as expected |
 
-![game](assets/images/science_flashcards_user.JPG)
+![game](assets/images/images2/science_flashcards_user.png)
 
 
 
