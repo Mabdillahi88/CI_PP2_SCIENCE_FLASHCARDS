@@ -1,110 +1,107 @@
-/* This line imports two font families from Google Fonts, Lato with weight 300 and Oswald. These fonts will be used in the rest of the CSS. */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
-
-/* This universal selector (*) applies styles to all elements. It resets margins and padding to zero, applies a box-sizing rule, sets the font-family to Lato and Oswald, sets a base font-size of 20px, and prevents horizontal scrolling. */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Lato', Oswald;
-  font-size: 20px;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-/* This section styles the body of the page. It applies a linear gradient as the background, sets the height to 100% of the viewport height, and uses Flexbox to center child elements. */
+/* General Body Styling */
 body {
-  background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* This section styles form elements. It sets a max-width, width, and height, applies a white background, adds margin and padding, applies a border radius, adds a box shadow, sets box-sizing to border-box, and allows for vertical scrolling within the form if needed. */
-form {
-  max-width: 800px;
-  width: 95%;
-  height: auto;
-  background: #fff;
-  margin: 10vh auto 0 auto;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-  box-sizing: border-box;
-  overflow: auto;
-}
-
-/* This section styles h1 elements. It removes the margin and centers the text. */
-h1 {
+  background: linear-gradient(135deg, #ffd1dc, #fad0c4);
   margin: 0;
-  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #3c4043;
 }
 
-/* This section styles label elements. It sets them to display as block elements and applies a top and bottom margin. */
+/* Navigation Bar */
+.navbar {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 10px 20px;
+  width: 90%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #3c4043;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  background-color: #ffd1dc;
+  color: #6a2c70;
+}
+
+/* Main Title */
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  color: #3c4043;
+}
+
+/* Form Styling */
+form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 label {
   display: block;
-  margin: 20px 0;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
-/* This section styles elements with the class of .btn-color. It applies a background color and changes the text color to white. */
-.btn-color {
-  background-color: #6a2c70;
-  color: #fff;
-}
-
-/* This section styles elements with the class of .navbar. It sets the width, background color, padding, and applies Flexbox for alignment. It also applies a top margin, border radius, and box shadow. */
-.navbar {
+input,
+textarea {
   width: 100%;
-  background: #fff;
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
 }
 
-/* This section styles anchor elements within the .navbar. It changes the text color, aligns the text to the center, removes text decoration, adjusts the font size, and applies horizontal margins. It also changes the color when hovered and when the class .active is applied. */
-.navbar a {
-  color: #3c4043;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  margin: 0 1em;
+button {
+  background: #6a2c70;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.navbar a:hover {
-  color: #6a2c70;
+button:hover {
+  background-color: #b83b5e;
 }
 
-.navbar a.active {
-  color: #6a2c70;
-}
-
-/* This media query applies styles to screen sizes 600px and below. It hides all but the first child anchor elements within the .navbar, shows the .icon class, and adjusts the max-width, width, margin, and padding of form elements. */
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {
-    display: none;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    padding: 10px;
   }
 
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-
-  form {
-    max-width: 100%;
-    width: 90%;
-    margin: 10vh auto 0 auto;
-    padding: 20px;
-  }
-}
-
-/* This media query applies styles to screen sizes 480px and below. It adjusts the width and padding of form elements. */
-@media screen and (max-width: 480px) {
   form {
     width: 95%;
     padding: 15px;

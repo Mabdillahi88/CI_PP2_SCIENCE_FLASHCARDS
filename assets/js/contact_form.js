@@ -1,36 +1,44 @@
-
-// This is not my code but modified it and I have credited it  the readme file
-// email js 
 /*jshint esversion: 6 */
 
-// Add event listener to the form submit button
-document.getElementById("contactFormNew").addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent the default form submission
+// Contact Form Submission
+document
+  .getElementById("contactFormNew")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
 
-  // Email service and template identifiers
-  const serviceID = "service_ucprvlr";
-  const templateID = "template_nm94uz8";
+    // Show loading feedback
+    const submitButton = event.target.querySelector("button[type='submit']");
+    submitButton.textContent = "Sending...";
+    submitButton.disabled = true;
 
-  // Send the form data using emailjs library
-  emailjs.sendForm(serviceID, templateID, this)
-    .then((response) => {
-      // Log success and show success alert
-      console.log("SUCCESS!", response.status, response.text);
-      alert("SUCCESS!");
-      event.target.reset(); // Reset the form
-    }, (error) => {
-      // Log failure and show failure alert
-      console.log("FAILED...", error);
-      alert("FAILED...");
-    });
-});
+    // Send form data via EmailJS
+    emailjs.sendForm("service_sh3glh8", "template_p1j2t64", this).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        alert(
+          "Thank you! Your message has been successfully sent. We’ll get back to you shortly."
+        );
 
-// Toggle responsive class for the navbar
-function myFunction() {
-  var x = document.getElementById("myNavbar");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
-  }
+        // Reset the form and button after successful submission
+        this.reset();
+        submitButton.textContent = "Submit";
+        submitButton.disabled = false;
+      },
+      (error) => {
+        console.error("FAILED...", error);
+        alert(
+          "Oops! Something went wrong while sending your message. Please try again later."
+        );
+
+        // Reset button text and state on failure
+        submitButton.textContent = "Submit";
+        submitButton.disabled = false;
+      }
+    );
+  });
+
+// Responsive Navbar Functionality
+function toggleNavbar() {
+  const navbar = document.getElementById("myNavbar");
+  navbar.classList.toggle("responsive"); // Toggle the "responsive" class
 }

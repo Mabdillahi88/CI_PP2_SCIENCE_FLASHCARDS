@@ -9,6 +9,20 @@ body {
   padding: 1em;
   overflow: auto;
   margin: 0;
+  animation: gradientShift 8s infinite alternate; /* Dynamic gradient animation */
+}
+
+/* Animated Gradient */
+@keyframes gradientShift {
+  0% {
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);
+  }
+  50% {
+    background: linear-gradient(45deg, #ffd1dc, #ffc4c8);
+  }
+  100% {
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);
+  }
 }
 
 /* Main Title */
@@ -16,7 +30,9 @@ h1 {
   color: #3c4043;
   text-align: center;
   margin-bottom: 1em;
-  font-size: 2.5em;
+  font-size: 2.8em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 /* Navigation Bar */
@@ -26,8 +42,8 @@ nav {
   padding: 1em;
   display: flex;
   justify-content: center;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   margin-bottom: 1.5em;
 }
 
@@ -44,11 +60,19 @@ nav ul li a {
   color: #3c4043;
   font-weight: bold;
   font-size: 1.2em;
-  transition: color 0.3s ease-in-out;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 nav ul li a:hover {
-  color: #b83b5e;
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+nav ul li a.active {
+  background-color: #f5c000;
+  color: #000;
 }
 
 /* Instructions Section */
@@ -56,8 +80,12 @@ nav ul li a:hover {
   text-align: center;
   margin-bottom: 2em;
   color: #3c4043;
-  font-size: 1.2em;
-  line-height: 1.6;
+  font-size: 1.3em;
+  line-height: 1.8;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Flash Cards */
@@ -73,14 +101,15 @@ nav ul li a:hover {
 .flashCard {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   padding: 1em;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
 }
 
 .flashCard:hover {
   transform: translateY(-5px);
+  background-color: #f8f8f8;
 }
 
 .flashCard .keyword {
@@ -94,10 +123,16 @@ nav ul li a:hover {
 .flashCard select {
   width: 100%;
   padding: 0.5em;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 1em;
   background: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flashCard select:focus {
+  border-color: #6a2c70;
+  box-shadow: 0px 0px 8px rgba(106, 44, 112, 0.5);
 }
 
 /* Correct and Incorrect Styles */
@@ -124,11 +159,12 @@ button {
   border-radius: 25px;
   font-size: 1em;
   cursor: pointer;
-  transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
   background: #b83b5e;
+  transform: scale(1.05);
 }
 
 #hintButton:disabled {
@@ -223,12 +259,12 @@ button:hover {
 /* Responsive Design */
 @media (min-width: 600px) {
   nav ul {
-      gap: 3em;
+    gap: 3em;
   }
 }
 
 @media (min-width: 800px) {
   #flashCardsContainer {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
