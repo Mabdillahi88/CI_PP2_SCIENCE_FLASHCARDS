@@ -1,225 +1,234 @@
-/* This section styles the entire webpage. It sets the background color, makes sure the page fills the entire height of the screen, arranges the elements in a column, and centers them. The font used throughout the webpage is Arial. */
+/* General Body Styling */
 body {
-    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, sans-serif;
-    padding: 1em;
-    overflow: hidden;
-  }
-  
-  /* This section sets the color, alignment, and bottom margin of all h1 (main heading) elements. */
-  h1 {
-    color: #3c4043;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  
-  /* This section styles the navigation bar. It sets the width, background color, padding, and item alignment. It also adds a shadow effect. */
-  nav {
-    width: 100%;
-    background: #fff;
-    padding: 1em 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2em;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* This section removes the default bullet points from ul elements in the navigation bar and sets their display to flex. */
+  background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 1em;
+  overflow: auto;
+  margin: 0;
+}
+
+/* Main Title */
+h1 {
+  color: #3c4043;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2.5em;
+}
+
+/* Navigation Bar */
+nav {
+  width: 100%;
+  background: #fff;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #3c4043;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #b83b5e;
+}
+
+/* Instructions Section */
+#instructions {
+  text-align: center;
+  margin-bottom: 2em;
+  color: #3c4043;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Flash Cards */
+#flashCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flashCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.flashCard:hover {
+  transform: translateY(-5px);
+}
+
+.flashCard .keyword {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #6a2c70;
+}
+
+/* Dropdown Styling */
+.flashCard select {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  background: #f9f9f9;
+}
+
+/* Correct and Incorrect Styles */
+.correct {
+  border: 2px solid #00c853;
+  background-color: #e8f5e9;
+}
+
+.incorrect {
+  border: 2px solid #d50000;
+  background-color: #ffebee;
+}
+
+.hint-highlight {
+  border: 2px dashed #fbc02d;
+}
+
+/* Buttons */
+button {
+  padding: 0.8em 1.5em;
+  background: #6a2c70;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #b83b5e;
+}
+
+#hintButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Circular Timer Styles */
+.circle-timer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 1em auto;
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.background-circle {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 10;
+}
+
+.foreground-circle {
+  fill: none;
+  stroke: #6a2c70;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.timer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #3c4043;
+}
+
+/* Tally Chart */
+#tallyChart {
+  margin-top: 1em;
+  text-align: center;
+}
+
+#tallyChart table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+#tallyChart th, #tallyChart td {
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+#tallyChart th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+#tallyChart td {
+  background-color: #fff;
+}
+
+/* Progress Indicator */
+#progressIndicator {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1em auto;
+  color: #6a2c70;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 2em auto;
+}
+
+.navigation-buttons button {
+  width: 45%;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
   nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+      gap: 3em;
   }
-  
-  /* This section styles the list items in the navigation bar. It sets the margin between each item. */
-  nav ul li {
-    margin: 0 2em;
-  }
-  
-  /* This section styles the anchor (a) elements within the list items of the navigation bar. It removes the underline from the links and sets their color. It also adds a hover effect to change the color when the mouse is over the link. */
-  nav ul li a {
-    text-decoration: none;
-    color: #3c4043;
-    transition: color .3s ease-in-out;
-  }
-  
-  nav ul li a:hover {
-    color: #6a2c70;
-  }
-  
-  /* This section sets the layout for the flash cards container. It uses a grid layout and sets the gap between the cards and the width of the container. */
+}
+
+@media (min-width: 800px) {
   #flashCardsContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2em;
-    width: 100%;
-  }
-  
-  /* This section sets the style for each individual flash card. It sets the background color, border radius for rounded corners, shadow effect, padding and adds a hover effect to scale the card size slightly when the mouse is over the card. */
-  .flashCard {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-    padding: 1em;
-    transition: transform .2s ease-in-out;
-  }
-  
-  .flashCard:hover {
-    transform: scale(1.03);
-  }
-  
-  /* This section sets the style for the keyword in each flash card. It sets the font size, color, and bottom margin. */
-  .flashCard .keyword {
-    font-size: 1.5em;
-    color: #3c4043;
-    margin-bottom: 1em;
-  }
-  
-  /* This section sets the style for the select elements in each flash card. It sets the width, padding, border radius for rounded corners, border color, and font size. */
-  .flashCard select {
-    width: 100%;
-    padding: 0.5em;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-  }
-  
-  /* This section sets the style for the button elements. It sets the display, width, height, margin, background color, text color, border radius for rounded corners, border style, and font size. It also adds a hover effect to change the background color when the mouse is over the button and changes the cursor to a pointer. */
-  button {
-    display: block;
-    width: 100%;
-    height: 50px;
-    margin: 2em auto;
-    background: #6a2c70;
-    color: #fff;
-    border-radius: 25px;
-    border: none;
-    font-size: 1em;
-    transition: background .3s ease-in-out;
-  }
-  
-  button:hover {
-    background: #b83b5e;
-    cursor: pointer;
-  }
-  
-  /* This section sets the style for the correct answer. It changes the border color and background color. */
-  .correct {
-    border-color: #00c853;
-    background-color: #e8f5e9;
-  }
-  
-  /* This section sets the style for the incorrect answer. It changes the border color and background color. */
-  .incorrect {
-    border-color: #d50000;
-    background-color: #ffebee;
-  }
-  
-  /* This section adjusts the flash cards layout for medium devices like tablets. It sets the layout to two columns and increases the padding of each card. */
-  @media only screen and (min-width: 500px) {
-    #flashCardsContainer {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .flashCard {
-      padding: 1.5em;
-    }
-  }
-  
-  /* This section adjusts the flash cards layout for large devices like desktops. It sets the layout to three columns and further increases the padding of each card. It also sets the width of the button elements. */
-  @media only screen and (min-width: 800px) {
-    #flashCardsContainer {
       grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .flashCard {
-      padding: 2em;
-    }
-  
-    button {
-      width: 200px;
-    }
   }
-  
-  /* This section styles the tally chart. It sets the top margin. */
-  #tallyChart {
-    margin-top: 2em;
-  }
-  
-  /* This section styles the table within the tally chart. It sets the width and collapses the borders into a single border. */
-  #tallyChart table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  /* This section styles the th (table heading) and td (table data) elements within the tally chart. It sets the padding, alignment, and border. */
-  #tallyChart th,
-  #tallyChart td {
-    padding: 0.5em 1em;
-    text-align: center;
-    border: 1px solid #ccc;
-  }
-  
-  /* This section styles the table headings in the tally chart. It sets the background color and font weight. */
-  #tallyChart th {
-    background-color: #f5f5e5;
-    font-weight: bold;
-  }
-  
-  /* This section styles the table data in the tally chart. It sets the font weight. */
-  #tallyChart td {
-    font-weight: normal;
-  }
-  
-  /* This section styles the progress indicator. It sets the font size, font weight, and bottom margin. */
-  #progressIndicator {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 1em;
-  }
-  
-  /* This section styles the hint button. It sets the background color, text color, border radius for rounded corners, border style, font size, padding, bottom margin, and cursor style. */
-  #hintButton {
-    background-color: #000000;
-    color: #FFFFFF;
-    border-radius: 25px;
-    border: none;
-    font-size: 1em;
-    padding: 0.5em 1em;
-    margin-bottom: 1em;
-    cursor: pointer;
-  }
-  
-  /* This section styles the disabled hint button. It changes the background color and cursor style. */
-  #hintButton:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  /* This section styles the timer bar container. It sets the width, height, background color, border radius for rounded corners, bottom margin, and overflow behavior. */
-  #timerBarContainer {
-    width: 100%;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 5px;
-    margin-bottom: 1em;
-    overflow: hidden;
-    display: block;
-  }
-  
-  /* This section styles the timer bar itself. It sets the height, background color, and transition effect for the width. */
-  #timerBar {
-    height: 100%;
-    background-color: #6a2c70;
-    transition: width 1s linear;
-  }
-  
+}
