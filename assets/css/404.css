@@ -1,79 +1,64 @@
 body {
-    /* This sets the background color of the webpage, giving it a nice gradient effect. */
     background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-    
-    /* This makes sure the entire height of the viewport is used. */
     height: 100vh;
-
-    /* These properties center elements vertically and horizontally in the body of the webpage. */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    /* This sets the font for the entire webpage to Arial, or a sans-serif font if Arial isn't available. */
     font-family: Arial, sans-serif;
-
-    /* This adds a bit of space around the edges of the body, so content doesn't touch the edges. */
     padding: 1em;
+    margin: 0;
 }
 
 .error-container {
-    /* This centers the text in the error container box. */
     text-align: center;
-
-    /* This limits the width of the error container, and centers it on the page. */
     max-width: 500px;
     margin: auto;
-
-    /* This provides a bit of padding inside the error container box. */
-    padding: 20px;
-
-    /* This sets the background color of the error container to white, and gives it rounded corners. */
+    padding: 30px;
     background-color: #fff;
-    border-radius: 10px;
-
-    /* This adds a soft drop shadow to the error container, and makes it grow slightly when hovered over. */
+    border-radius: 15px;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-    transition: transform .2s ease-in-out;
-}
-
-.error-container:hover {
-    /* This makes the error container grow slightly when you hover over it. */
-    transform: scale(1.03);
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 .error-code {
-    /* This sets the font size of the error code, and its color. It also adds some space below it. */
     font-size: 6rem;
     color: #3c4043;
     margin-bottom: 1em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .error-message {
-    /* This sets the font size of the error message, and its color. It also adds some space below it. */
     font-size: 1.5rem;
-    color: #3c4043;
+    color: #6a2c70;
     margin-bottom: 1em;
 }
 
 .return-home {
-    /* This styles the return home button. */
     display: inline-block;
     background: #6a2c70;
     color: #fff;
     border-radius: 25px;
-    padding: 10px 20px;
-
-    /* This removes the underline from the text in the button. */
+    padding: 12px 25px;
     text-decoration: none;
-
-    /* This makes the button's background color change smoothly when hovered over. */
-    transition: background .3s ease-in-out;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .return-home:hover {
-    /* This changes the button's background color when you hover over it, and changes the cursor to a pointer. */
     background: #b83b5e;
+    transform: scale(1.1);
     cursor: pointer;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
