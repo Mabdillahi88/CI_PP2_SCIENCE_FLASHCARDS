@@ -206,7 +206,7 @@ The website's layout is simple and intuitive, with consistent aesthetics through
 
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors.
 
-index.html [results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmabdillahi88.github.io%2FCI_PP2_SCIENCE_FLASHCARDS%2Findex.html) 
+![index html](assets/css/docs/features/validations/HTML_validation_index.png)
 
 
 contact.html [results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmabdillahi88.github.io%2FCI_PP2_SCIENCE_FLASHCARDS%2Fcontact_form.html)
