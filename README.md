@@ -242,10 +242,6 @@ The light house performance evaluation tool was used to ensure the website met h
 
 ![index html](assets/css/docs/features/validations/lighthouse_index.png)
 
-![contact html](assets/css/docs/features/validations/lighthouse_contact.png)
-
-![404 html](assets/css/docs/features/validations/lighthouse_404.png)
-
 #### Contact form page
 
 ![contact html](assets/css/docs/features/validations/lighthouse_contact.png)
