@@ -208,48 +208,52 @@ The W3C Markup Validation Service was used to validate the HTML of the website. 
 
 ![index html](assets/css/docs/features/validations/HTML_validation_index.png)
 
+![contact html](assets/css/docs/features/validations/HTML%20validation%20contact.png)
 
-contact.html [results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmabdillahi88.github.io%2FCI_PP2_SCIENCE_FLASHCARDS%2Fcontact_form.html)
+![404 html](assets/css/docs/features/validations/HTML_validation_404.png)
 
-
-![404](assets/css/docs/features/validations/404_error%20page.%20html.validation.JPG)
 
 #### CSS Validation
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
 
-style.css [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmabdillahi88.github.io%2FCI_PP2_SCIENCE_FLASHCARDS%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+![index html](assets/css/docs/features/validations/CSS_validation_index.png)
 
-contact_form [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmabdillahi88.github.io%2FCI_PP2_SCIENCE_FLASHCARDS%2Fcontact_form.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+![contact html](assets/css/docs/features/validations/CSS_validation_contact.png)
 
-![404](assets/css/docs/features/validations/404_error%20page.%20css.validation.JPG)
+![404 html](assets/css/docs/features/validations/CSS_validation_404.png)
 
 
 #### Accessibility
+
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
 
-index.html [results](https://wave.webaim.org/report#/https://mabdillahi88.github.io/CI_PP2_SCIENCE_FLASHCARDS/index.html) 
+![index html](assets/css/docs/features/validations/WAVE_validation_index.png)
 
+![contact html](assets/css/docs/features/validations/WAVE_validation_contact.png)
 
-contact.html [results](https://wave.webaim.org/report#/https://mabdillahi88.github.io/CI_PP2_SCIENCE_FLASHCARDS/contact_form.html)
-
-404.html [results](https://wave.webaim.org/report#/https://mabdillahi88.github.io/CI_PP2_SCIENCE_FLASHCARDS/index.html1)
+![404 html](assets/css/docs/features/validations/WAVE_validation_404.png)
 
 
 #### Performance 
 
-Despite my efforts, I encountered persistent issues while testing the website's performance using Google Lighthouse in Chrome DevTools. I attempted various troubleshooting steps such as shutting down browsers and applications and trying different internet connections, but unfortunately, the problem persisted. I have documented the error messages that consistently appeared, and the tool froze every time.
+The light house performance evaluation tool was used to ensure the website met high standards. All pages pass with 0 errors.
 
 #### Index page
 
-![index.html](assets/css/docs/features/validations/index%20page.lighthouse.JPG)
+![index html](assets/css/docs/features/validations/lighthouse_index.png)
+
+![contact html](assets/css/docs/features/validations/lighthouse_contact.png)
+
+![404 html](assets/css/docs/features/validations/lighthouse_404.png)
 
 #### Contact form page
 
-![index.html](assets/css/docs/features/validations/contact_form.page.lighthouse.JPG)
+![contact html](assets/css/docs/features/validations/lighthouse_contact.png)
 
 #### 404 error page
 
-![index.html](assets/css/docs/features/validations/404_error%20page.lighthouse.JPG)
+![404 html](assets/css/docs/features/validations/lighthouse_404.png)
+
 
 ### JavaScript Validation
 
