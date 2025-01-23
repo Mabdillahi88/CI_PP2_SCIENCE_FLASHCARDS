@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-// Flashcard series data
+// Flashcard series data for different topics
 const flashCardsSeries = {
   physics: [
     { keyword: 'Force', definition: 'A push or pull upon an object resulting from the object\'s interaction with another object.' },
@@ -24,22 +24,22 @@ const flashCardsSeries = {
 };
 
 // Global variables
-let currentTopic = 'physics';
-let currentSet = 0;
-const totalSets = Object.keys(flashCardsSeries).length;
+let currentTopic = 'physics'; // Default topic
+let currentSet = 0; // Current topic index
+const totalSets = Object.keys(flashCardsSeries).length; // Total number of topics
 
-let hintsRemaining = 2;
-let hintUsed = false;
+let hintsRemaining = 2; // Remaining hints per topic
+let hintUsed = false; // Whether a hint has been used
 
 let timerInterval;
-const timerDuration = 15; // Timer duration in seconds
-let remainingTime = timerDuration;
+const timerDuration = 15; // Total timer duration in seconds
+let remainingTime = timerDuration; // Remaining time for the timer
 
-// Tally Chart Variables
+// Tally Chart variables to track correct/incorrect answers
 let tallyCorrect = 0;
 let tallyIncorrect = 0;
 
-// DOM Elements
+// DOM element references
 const flashCardsContainer = document.getElementById('flashCardsContainer');
 const checkAnswersButton = document.getElementById('checkAnswers');
 const progressIndicator = document.getElementById('progressIndicator');
@@ -48,35 +48,37 @@ const tallyChart = document.getElementById('tallyChart');
 const nextButton = document.getElementById('nextButton');
 const prevButton = document.getElementById('prevButton');
 
-// Timer DOM Elements
+// Timer DOM elements
 const timerText = document.getElementById('timerText');
 const foregroundCircle = document.querySelector('.foreground-circle');
 
-// Set the circumference of the timer circle
-const radius = 45;
-const circumference = 2 * Math.PI * radius;
-foregroundCircle.style.strokeDasharray = `${circumference} ${circumference}`;
-foregroundCircle.style.strokeDashoffset = `${circumference}`;
+// Set up the timer circle dimensions
+const radius = 45; // Matches the radius in the SVG circle
+const circumference = 2 * Math.PI * radius; // Calculate circle's circumference
+foregroundCircle.style.strokeDasharray = `${circumference} ${circumference}`; // Define stroke length
+foregroundCircle.style.strokeDashoffset = `${circumference}`; // Initially hide the stroke
 
-// Reset Timer
+// Reset the timer to its initial state
 function resetTimer() {
-  clearInterval(timerInterval);
-  remainingTime = timerDuration;
-  foregroundCircle.style.strokeDashoffset = `${circumference}`;
-  timerText.textContent = timerDuration;
+  clearInterval(timerInterval); // Stop any ongoing timer
+  remainingTime = timerDuration; // Reset time
+  foregroundCircle.style.strokeDashoffset = `${circumference}`; // Reset circle animation
+  timerText.textContent = timerDuration; // Reset displayed time
 }
 
-// Start Timer
+// Start the countdown timer
 function startTimer() {
-  resetTimer();
+  resetTimer(); // Ensure the timer is reset
   timerInterval = setInterval(() => {
     remainingTime--;
     const progress = remainingTime / timerDuration;
     const offset = circumference * (1 - progress);
 
+    // Update circle animation and timer display
     foregroundCircle.style.strokeDashoffset = offset;
     timerText.textContent = remainingTime;
 
+    // If time runs out, reveal answers and move to the next topic
     if (remainingTime <= 0) {
       clearInterval(timerInterval);
       revealCorrectAnswers();
@@ -85,19 +87,21 @@ function startTimer() {
   }, 1000);
 }
 
-// Create flashcards for a topic
+// Dynamically create flashcards for the selected topic
 function createFlashCards(topic) {
-  flashCardsContainer.innerHTML = '';
+  flashCardsContainer.innerHTML = ''; // Clear previous flashcards
 
   flashCardsSeries[topic].forEach((card, index) => {
     const cardElement = document.createElement('div');
     cardElement.classList.add('flashCard');
 
+    // Display the keyword on the card
     const keywordElement = document.createElement('div');
     keywordElement.classList.add('keyword');
     keywordElement.innerText = `Keyword: ${card.keyword}`;
     keywordElement.dataset.id = index;
 
+    // Populate dropdown with shuffled definitions
     const definitions = flashCardsSeries[topic].map((flashCard) => flashCard.definition);
     shuffle(definitions);
 
@@ -109,20 +113,21 @@ function createFlashCards(topic) {
       selectElement.appendChild(optionElement);
     });
 
+    // Append elements to the card
     cardElement.appendChild(keywordElement);
     cardElement.appendChild(selectElement);
     flashCardsContainer.appendChild(cardElement);
   });
 
-  updateProgressIndicator();
-  updateTallyChart();
-  resetTimer();
-  startTimer();
-  hintUsed = false;
-  updateHintButton();
+  updateProgressIndicator(); // Update progress bar
+  updateTallyChart(); // Update score tally
+  resetTimer(); // Reset the timer
+  startTimer(); // Start the timer
+  hintUsed = false; // Reset hint usage
+  updateHintButton(); // Update hint button state
 }
 
-// Shuffle array utility function
+// Shuffle array for randomized options
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -130,34 +135,35 @@ function shuffle(array) {
   }
 }
 
-// Update progress indicator
+// Display the progress indicator
 function updateProgressIndicator() {
   progressIndicator.innerText = `Set ${currentSet + 1} of ${totalSets}`;
 }
 
-// Use a hint
+// Use a hint and automatically select the correct answer
 function useHint() {
   if (hintsRemaining > 0 && !hintUsed) {
     hintUsed = true;
     hintsRemaining--;
     updateHintButton();
 
+    // Automatically fill the correct answer for the first card
     const currentCardElement = flashCardsContainer.firstChild;
     const currentCardIndex = currentCardElement.querySelector('.keyword').dataset.id;
     const correctDefinition = flashCardsSeries[currentTopic][currentCardIndex].definition;
 
     currentCardElement.querySelector('select').value = correctDefinition;
-    currentCardElement.classList.add('hint-highlight');
+    currentCardElement.classList.add('hint-highlight'); // Highlight the hint
   }
 }
 
-// Update hint button text
+// Update hint button text and state
 function updateHintButton() {
   hintButton.innerText = `Hint (${hintsRemaining} left)`;
-  hintButton.disabled = hintsRemaining === 0;
+  hintButton.disabled = hintsRemaining === 0; // Disable if no hints remain
 }
 
-// Reveal correct answers
+// Reveal correct answers and tally scores
 function revealCorrectAnswers() {
   const flashCardsElements = document.querySelectorAll('.flashCard');
   let correctAnswers = 0;
@@ -175,12 +181,13 @@ function revealCorrectAnswers() {
     }
   });
 
+  // Update the tally
   tallyCorrect += correctAnswers;
   tallyIncorrect += flashCardsElements.length - correctAnswers;
   updateTallyChart();
 }
 
-// Update tally chart
+// Update the tally chart display
 function updateTallyChart() {
   const tallyChartHTML = `
     <table>
@@ -197,15 +204,15 @@ function updateTallyChart() {
   tallyChart.innerHTML = tallyChartHTML;
 }
 
-// Switch to the next topic
+// Move to the next topic
 function nextTopic() {
   currentSet = (currentSet + 1) % totalSets;
   currentTopic = Object.keys(flashCardsSeries)[currentSet];
-  hintsRemaining = 2;
+  hintsRemaining = 2; // Reset hints
   createFlashCards(currentTopic);
 }
 
-// Event Listeners
+// Event Listeners for buttons
 checkAnswersButton.addEventListener('click', revealCorrectAnswers);
 hintButton.addEventListener('click', useHint);
 nextButton.addEventListener('click', nextTopic);
@@ -216,5 +223,5 @@ prevButton.addEventListener('click', () => {
   createFlashCards(currentTopic);
 });
 
-// Initialize
+// Initialize with the default topic
 createFlashCards(currentTopic);

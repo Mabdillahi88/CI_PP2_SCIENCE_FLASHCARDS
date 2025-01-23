@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="assets/css/contact_form.css">
-    <link rel="icon" href="assets/images/favicon.JPG" type="image/x-icon">
+    <meta charset="UTF-8"> <!-- Set character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure mobile responsiveness -->
+    <title>Contact Us</title> <!-- Page title -->
+    <link rel="stylesheet" href="assets/css/contact_form.css"> <!-- Link to external CSS -->
+    <link rel="icon" href="assets/images/favicon.JPG" type="image/x-icon"> <!-- Favicon -->
 </head>
 <body>
 <header>
-    <!-- Updated Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="contact_form.html">Contact Us</a></li>
+            <li><a href="index.html" class="active">Home</a></li> <!-- Link to Home page -->
+            <li><a href="contact_form.html">Contact Us</a></li> <!-- Link to Contact Us page -->
         </ul>
     </nav>
 </header>
 
 <main>
     <div class="container">
-        <h1>Contact Us</h1>
+        <h1>Contact Us</h1> <!-- Main heading -->
+        <!-- Contact Form -->
         <form id="contactFormNew">
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <label for="name">Name</label> <!-- Label for Name input -->
+                <input type="text" name="name" id="name" placeholder="Enter your name" required> <!-- Name input field -->
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <label for="email">Email</label> <!-- Label for Email input -->
+                <input type="email" name="email" id="email" placeholder="Enter your email" required> <!-- Email input field -->
             </div>
             <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" placeholder="Enter email subject" required>
+                <label for="subject">Subject</label> <!-- Label for Subject input -->
+                <input type="text" name="subject" id="subject" placeholder="Enter email subject" required> <!-- Subject input field -->
             </div>
             <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5" placeholder="Enter your message..." required></textarea>
+                <label for="message">Message</label> <!-- Label for Message textarea -->
+                <textarea name="message" id="message" rows="5" placeholder="Enter your message..." required></textarea> <!-- Message textarea -->
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Submit</button> <!-- Submit button -->
         </form>
     </div>
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script> <!-- EmailJS library -->
 <script>
-    emailjs.init("MlF2aIbu9dTlVg45s");
+    emailjs.init("MlF2aIbu9dTlVg45s"); <!-- Initialize EmailJS -->
 </script>
-<script src="assets/js/contact_form.js"></script>
+<script src="assets/js/contact_form.js"></script> <!-- Link to external JavaScript -->
 </body>
 </html>

@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Science Flash Cards</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/images/favicon.JPG" type="image/x-icon">
+    <meta charset="UTF-8"> <!-- Set character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure mobile responsiveness -->
+    <title>Science Flash Cards</title> <!-- Page title -->
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Link to external CSS -->
+    <link rel="icon" href="assets/images/favicon.JPG" type="image/x-icon"> <!-- Favicon -->
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact_form.html">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li> <!-- Link to Home page -->
+            <li><a href="contact_form.html">Contact Us</a></li> <!-- Link to Contact Us page -->
         </ul>
     </nav>
 
-    <h1>Science Flash Cards</h1>
+    <h1>Science Flash Cards</h1> <!-- Main heading -->
 
-    <!-- Enhanced Instructions Section -->
+    <!-- Instructions Section -->
     <section id="instructions">
-        <h2>Welcome to Science Flash Cards!</h2>
+        <h2>Welcome to Science Flash Cards!</h2> <!-- Section title -->
         <p>
             This interactive flashcard game is designed to help students review and test their knowledge of key science concepts in Physics, Biology, and Chemistry. It's perfect for exam preparation or as a fun learning activity.
         </p>
-        <h3>How to Play:</h3>
+        <h3>How to Play:</h3> <!-- Gameplay instructions -->
         <ol>
             <li>Choose a science topic using the navigation buttons at the top.</li>
             <li>Each flashcard shows a keyword. Match it with the correct definition from the dropdown options below.</li>
@@ -34,33 +34,34 @@
         <p>Ready to start learning? Select a topic and test your knowledge!</p>
     </section>
 
-    <div id="flashCardsContainer"></div>
+    <div id="flashCardsContainer"></div> <!-- Container for flashcards -->
 
-    <button id="checkAnswers" title="Submit your answers and see the correct ones">Check Answers</button>
-    <div id="progressIndicator"></div>
+    <button id="checkAnswers" title="Submit your answers and see the correct ones">Check Answers</button> <!-- Button to check answers -->
+    <div id="progressIndicator"></div> <!-- Progress indicator -->
 
     <!-- Circular Timer -->
     <div class="timer-container">
         <div class="circle-timer">
             <svg class="progress-circle" width="100" height="100">
-                <circle cx="50" cy="50" r="45" class="background-circle" />
-                <circle cx="50" cy="50" r="45" class="foreground-circle" />
+                <circle cx="50" cy="50" r="45" class="background-circle" /> <!-- Background of timer -->
+                <circle cx="50" cy="50" r="45" class="foreground-circle" /> <!-- Foreground of timer -->
             </svg>
-            <div class="timer-text" id="timerText">15</div>
+            <div class="timer-text" id="timerText">15</div> <!-- Timer text -->
         </div>
-        <p class="timer-description">Complete this set before the timer runs out!</p>
+        <p class="timer-description">Complete this set before the timer runs out!</p> <!-- Timer description -->
     </div>
 
-    <button id="hintButton" title="Get a hint (you have 2 hints per topic)">Hint (2 left)</button>
-    
+    <button id="hintButton" title="Get a hint (you have 2 hints per topic)">Hint (2 left)</button> <!-- Hint button -->
+
     <!-- Tally Chart -->
-    <div id="tallyChart"></div>
-    
+    <div id="tallyChart"></div> <!-- Tally chart container -->
+
+    <!-- Navigation Buttons -->
     <div class="navigation-buttons">
-        <button id="prevButton" title="Go to the previous topic">Previous</button>
-        <button id="nextButton" title="Go to the next topic">Next</button>
+        <button id="prevButton" title="Go to the previous topic">Previous</button> <!-- Previous button -->
+        <button id="nextButton" title="Go to the next topic">Next</button> <!-- Next button -->
     </div>
 
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/scripts.js"></script> <!-- Link to external JavaScript -->
 </body>
 </html>
